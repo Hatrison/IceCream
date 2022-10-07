@@ -1,2 +1,21 @@
-@import './common';
-@import './example';
+@import '~node_modules/modern-normalize/modern-normalize.css';
+
+@import './base/common';
+@import './base/container';
+@import './base/header';
+@import './base/subtitle';
+
+@import './components/modal-window';
+
+@import './layout/header';
+@import './layout/hero';
+@import './layout/products';
+@import './layout/about';
+@import './layout/advantages';
+@import './layout/gallery';
+@import './layout/customer-reviews';
+@import './layout/contacts';
+@import './layout/footer';
+
+@import './utils/hidden';
+@import './utils/variables';
