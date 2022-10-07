@@ -1,3 +1,12 @@
+body {
+  font-family: var(--primary-font);
+  font-size: var(--primary-font-size);
+  font-weight: var(--primary-font-weight);
+  font-style: normal;
+  color: var(--primary-color);
+  letter-spacing: 0.04em;
+}
+
 button {
   cursor: pointer;
 }
@@ -25,4 +34,8 @@ ol {
   margin-bottom: 0;
   padding-left: 0;
   list-style: none;
+}
+
+a {
+  text-decoration: none;
 }
