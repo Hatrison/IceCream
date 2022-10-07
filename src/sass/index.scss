@@ -5,7 +5,21 @@
 @import './base/header';
 @import './base/subtitle';
 
-@import './components/modal-window';
+@import './components/backdrop';
+@import './components/mobile-menu';
+@import './components/buy-now-modal-wnd';
+@import './components/products-modal-wnd';
+@import './components/read-more-modal-wnd';
+@import './components/our-locations-modal-wnd';
+@import './components/franchise-modal-wnd';
+@import './components/submit-modal-btn';
+@import './components/buy-now-modal-btn';
+@import './components/products-modal-btn';
+@import './components/how-its-made-modal-btn';
+@import './components/read-more-modal-btn';
+@import './components/our-locations-modal-btn';
+@import './components/franchise-modal-btn';
+@import './components/customer-reviews-block';
 
 @import './layout/header';
 @import './layout/hero';
