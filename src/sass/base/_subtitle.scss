@@ -1,0 +1,19 @@
+.subtitle {
+  font-weight: var(--subtitle-font-weight);
+  font-size: 18px;
+  line-height: 1.22;
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: 768px) {
+  .subtitle {
+    font-size: 22px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .subtitle {
+    font-size: 30px;
+    line-height: 1.23;
+  }
+}
