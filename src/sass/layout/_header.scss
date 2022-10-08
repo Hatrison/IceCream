@@ -72,20 +72,24 @@
     padding-top: 12px;
     overflow-y: scroll;
 
+    transition: opacity 250ms linear,
+            background-color 250ms linear,
+            visibility 250ms linear;
+
     @media screen and (min-width:768px) {
         padding-top: 20px;
     }
-}
 
-.mobile-menu.is-open {
-    opacity: 1;
-    visibility: visible;
-    pointer-events: auto;
-
-    background-color: var(--mobile-menu-bg-color);
-
-    @media screen and (min-width:768px) {
-      background-color: var(--tablet-menu-bg-color);  
+    &.is-open {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+    
+        background-color: var(--mobile-menu-bg-color);
+    
+        @media screen and (min-width:768px) {
+            background-color: var(--tablet-menu-bg-color);
+        }
     }
 }
 
