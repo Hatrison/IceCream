@@ -5,6 +5,16 @@ body {
   font-style: normal;
   color: var(--primary-color);
   letter-spacing: 0.04em;
+  background-image: url(../images/body/background-img-mobile.jpg);
+  background-repeat: repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  body {
+    background-image: url(../images/body/background-img-mobile@2x.jpg);
+  }
 }
 
 button {
@@ -38,4 +48,28 @@ ol {
 
 a {
   text-decoration: none;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    background-image: url(../images/body/background-img-tablet.jpg);
+  }
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    body {
+      background-image: url(../images/body/background-img-tablet@2x.jpg);
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  body {
+    background-image: url(../images/body/background-img-desktop.jpg);
+  }
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    body {
+      background-image: url(../images/body/background-img-desktop@2x.jpg);
+    }
+  }
 }
