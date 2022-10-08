@@ -12,5 +12,9 @@
                 d="M6.4 11.733v-2.133h19.2v2.133h-19.2zM6.4 17.067h19.2v-2.133h-19.2v2.133zM6.4 22.4h19.2v-2.133h-19.2v2.133z">
             </path>
         </symbol>
+
+        <symbol id="angle-icon" viewBox="0 0 32 32">
+            <path d="M10.667 5.333l13.2 10.667-13.2 10.667"></path>
+        </symbol>
     </defs>
 </svg>
