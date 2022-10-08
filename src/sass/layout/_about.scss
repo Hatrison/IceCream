@@ -27,7 +27,7 @@
     font-size: 12px;
     line-height: 1.76;
     letter-spacing: 0.04em;
-    color: #FCFCFC;
+    color: var(--primary-color);
 }
 .about__btn{
     display: inline-flex;
@@ -35,16 +35,16 @@
     padding: 12px 34px;
 
 
-    background: #F8D24E;
+    background: var(--accent-primary-color);
     border-radius: 10px;
     border: none;
     transition: background-color 250ms linear, color 250ms linear ;
     &:hover{
-        background-color: #0A8817;
+        background-color: var(--accent-secondary-color);
     }
     &:focus{
-        color: #FCFCFC;
-        fill: #FCFCFC;
+        color: var(--primary-color);
+        fill: var(--primary-color);
     }
 }
 .about__icon-read-mo{
