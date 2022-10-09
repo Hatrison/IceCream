@@ -11,12 +11,12 @@
   line-height: 1.25;
   color: var(--secondary-color);
 
-  &:hover,
-  &:focus {
+  &:hover {
     background-color: var(--accent-secondary-color);
   }
 
   &:focus {
+    background-color: var(--accent-secondary-color);
     color: var(--primary-color);
     outline: none;
   }
