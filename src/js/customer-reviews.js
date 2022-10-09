@@ -1,5 +1,4 @@
-let section = document.getElementById('customer-reviews'),
-  dots = Array.prototype.slice.call(document.getElementById('slider-dots').children),
+let dots = Array.prototype.slice.call(document.getElementById('slider-dots').children),
   reviews = Array.prototype.slice.call(document.getElementById('slider-reviews').children),
   speed = 10000,
   currentSlide = 0,
