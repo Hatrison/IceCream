@@ -9,31 +9,24 @@
     margin-bottom: 12px;
 }
 .about__title{
-    font-weight: 400;
-    //font-size: 30px;
-    //line-height: 38px;
-    margin: 0 auto;
-    margin-bottom: 54px;
+    font-weight: 400; //дописала поскольку не подтянулось
 }
 .about__img{
     display: block;
-    
     border-radius: 50%;
-    overflow: hidden;
-   
 }
 .about__text{
-    font-weight: 400;
     font-size: 12px;
     line-height: 1.76;
-    letter-spacing: 0.04em;
-    color: var(--primary-color);
 }
 .about__btn{
     display: inline-flex;
     align-items: center;
     padding: 12px 34px;
 
+    font-weight: 600;
+    line-height: 1.29;
+    color: #131313;
 
     background: var(--accent-primary-color);
     border-radius: 10px;
@@ -44,16 +37,20 @@
     }
     &:focus{
         color: var(--primary-color);
-        fill: var(--primary-color);
     }
 }
 .about__icon-read-mo{
     margin-left: 5px;
     transition: fill 250ms linear;
+.about__btn:focus &{
+    fill: var(--primary-color);
+}    
 }
 @media screen and (max-width: 767px){
 .about__title{
     width: 200px;
+    margin: 0 auto;
+    margin-bottom: 54px;
 }
 .about__img{
     margin-left: auto;
@@ -119,12 +116,9 @@
     .about__title {
         margin-bottom: 121px;
     }
-    .about__img-text-btn {
-        //column-gap: 100px;
-    }
     .about__img {
-        box-shadow: 0px -39px 0px 1px rgba(248, 210, 78, 0.7);
-        width: 500px;
+       box-shadow: 0px -39px 0px 1px rgba(248, 210, 78, 0.7);
+       width: 500px;
     }
     .about__text-btn {
         width: 463px;
