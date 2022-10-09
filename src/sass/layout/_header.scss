@@ -71,7 +71,8 @@
   padding-top: 12px;
   overflow-y: scroll;
 
-  transition: opacity 250ms linear, background-color 250ms linear, visibility 250ms linear;
+  transition: opacity var(--animation), background-color var(--animation),
+    visibility var(--animation);
 
   @media screen and (min-width: 768px) {
     padding-top: 20px;
@@ -120,6 +121,17 @@
   line-height: 1.22;
 
   color: var(--primary-color);
+
+  transition: color var(--animation);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-primary-color);
+  }
+
+  @media screen and (max-width: 319px) {
+    font-size: 10vw;
+  }
 
   @media screen and (min-width: 768px) {
     font-size: 48px;
@@ -200,7 +212,7 @@
 
     color: var(--primary-color);
 
-    transition: color 250ms linear;
+    transition: color var(--animation);
 
     &:hover,
     &:focus {
