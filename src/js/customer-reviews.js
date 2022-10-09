@@ -22,15 +22,32 @@ window.onload = () => {
 
     clearTimeout(timer);
     timer = setTimeout(() => {
+      maxHeight();
       playSlide((currentSlide += 1));
     }, speed);
   };
 
   for (l = 0; l < dots.length; l++) {
     dots[l].addEventListener('click', function () {
+      maxHeight();
       playSlide((currentSlide = dots.indexOf(this)));
     });
   }
 
   playSlide(currentSlide);
 };
+
+function maxHeight() {
+  let blocks = document.getElementsByClassName('review__text-block'),
+    height = 0;
+
+  for (let i = 0; i < blocks.length; i++) {
+    if (blocks[i].offsetHeight > height) {
+      height = blocks[i].offsetHeight;
+    }
+  }
+
+  for (let i = 0; i < blocks.length; i++) {
+    blocks[i].style.height = height + 'px';
+  }
+}
