@@ -1,3 +1,8 @@
+.slider {
+  margin: 0 auto;
+  margin-bottom: 48px;
+}
+
 .dots {
   display: flex;
   justify-content: center;
@@ -43,11 +48,6 @@
   position: relative;
 }
 
-.customer-review__review {
-  margin: 0 auto;
-  margin-bottom: 48px;
-}
-
 .review__image {
   margin-bottom: 32px;
 }
@@ -67,6 +67,7 @@
 }
 
 .review__address {
+  margin-bottom: 14px;
   font-weight: 500;
   font-size: 20px;
   line-height: 186%;
@@ -74,7 +75,7 @@
 }
 
 @media screen and (min-width: 768px) {
-  .customer-review__review {
+  .slider {
     margin: 0 16px;
     margin-bottom: 80px;
   }
@@ -97,12 +98,13 @@
   }
 
   .review__address {
+    margin-bottom: 32px;
     font-size: 16px;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .customer-review__review {
+  .slider {
     margin: 0 100px;
     margin-bottom: 100px;
   }
