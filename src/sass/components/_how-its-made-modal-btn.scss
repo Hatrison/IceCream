@@ -10,6 +10,7 @@
   font-size: 8px;
   line-height: 1.25;
   color: var(--accent-primary-color);
+  transition: color var(--animation);
 
   &:hover {
     color: var(--accent-secondary-color);
