@@ -1,0 +1,36 @@
+.how-its-made-modal-btn {
+  width: 83px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  text-decoration: underline;
+  font-weight: var(--modal-btn-font-weight);
+  font-size: 8px;
+  line-height: 1.25;
+  color: var(--accent-primary-color);
+  transition: color var(--animation);
+
+  &:hover {
+    color: var(--accent-secondary-color);
+  }
+
+  &:focus {
+    color: var(--primary-color);
+    outline: none;
+  }
+
+  &:disabled {
+    color: var(--disabled-color);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .how-its-made-modal-btn {
+    width: 154px;
+    height: 40px;
+    font-size: 14px;
+    line-height: 1.21;
+  }
+}
