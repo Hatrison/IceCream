@@ -1,6 +1,11 @@
 <section class="contacts">
+<<<<<<< HEAD
   <div class="container">
     <h2 class="visually-hidden" id="contacts">Contacts</h2>
+=======
+  <div class="container contacts__container">
+    <h2 class="visually-hidden">Contacts</h2>
+>>>>>>> main
     <ul class="contact-list">
       <li class="contact-list__item">
         <div class="contact-block">
@@ -61,7 +66,7 @@
       </li>
 
       <li class="contact-list__item">
-        <div class="contact-block contact-block--short">
+        <div class="contact-block">
           <p class="contact__name">Cafe</p>
           <h3 class="contact__city">New York</h3>
           <a href="https://bit.ly/3eeHBzH" target="_blank" rel="noopener noreferrer nofollow"
@@ -91,7 +96,23 @@
       </li>
     </ul>
 
-    <button type="button" class="button__contacts">Our Locations</button>
-    <button type="button" class="button__contacts">Franchise</button>
+    <ul class="buttons-list">
+      <li class="buttons-list__item">
+        <button type="button" class="our-locations-modal-btn">
+          Our Locations
+          <svg class="arrow" width="12" height="12" aria-label="Exit to locations">
+            <use href="/src/images/icon-button.svg#icon-btn"></use>
+          </svg>
+        </button>
+      </li>
+      <li class="buttons-list__item">
+        <button type="button" class="franchise-modal-btn">
+          Franchise
+          <svg class="arrow" width="12" height="12" aria-label="Exit to franchise">
+            <use href="/src/images/icon-button.svg#icon-btn"></use>
+          </svg>
+        </button>
+      </li>
+    </ul>
   </div>
 </section>
