@@ -3,21 +3,12 @@
     <div class="container page-header__container">
       <a class="page-header__logo" href="#">
         <picture>
-          <source
-            srcset="./images/logo/logo-desk.png 1x, ./images/logo/logo-desk@2x.png 2x"
-            media="(min-width:1200px)"
-            type="image/png"
-          />
-          <source
-            srcset="./images/logo/logo-tab.png 1x, ./images/logo/logo-tab@2x.png 2x"
-            media="(min-width:768px)"
-            type="image/png"
-          />
-          <source
-            srcset="./images/logo/logo-mobile.png 1x, ./images/logo/logo-mobile@2x.png 2x"
-            media="(max-width:767px)"
-            type="image/png"
-          />
+          <source srcset="./images/logo/logo-desk.png 1x, ./images/logo/logo-desk@2x.png 2x" media="(min-width:1200px)"
+            type="image/png" />
+          <source srcset="./images/logo/logo-tab.png 1x, ./images/logo/logo-tab@2x.png 2x" media="(min-width:768px)"
+            type="image/png" />
+          <source srcset="./images/logo/logo-mobile.png 1x, ./images/logo/logo-mobile@2x.png 2x"
+            media="(max-width:767px)" type="image/png" />
           <img src="./images/logo/logo-mobile.png" alt="ice cream logo" />
         </picture>
       </a>
@@ -27,13 +18,13 @@
             <a class="nav-list__link" href="#">Home</a>
           </li>
           <li class="nav-list__item">
-            <a class="nav-list__link" href="#">How it’s made?</a>
+            <a class="nav-list__link" href="#about">How it’s made?</a>
           </li>
           <li class="nav-list__item">
             <a class="nav-list__link" href="#">Our products</a>
           </li>
           <li class="nav-list__item">
-            <a class="nav-list__link" href="#">Contact</a>
+            <a class="nav-list__link" href="#contacts">Contact</a>
           </li>
         </ul>
       </nav>
@@ -46,59 +37,60 @@
           </button>
         </li>
         <li class="item__button-order">
-          <button type="button" class="button page-header__button-order">Buy now</button>
+          <button type="button" class="buy-now-modal-btn button-order">Buy now
+            <svg class="button-icon" aria-label="buy now icon">
+              <use href="./images/icon-button.svg#icon-btn"></use>
+            </svg>
+          </button>
         </li>
       </ul>
     </div>
-
-    <div class="mobile-menu js-menu-container">
-      <div class="container">
+  </header>
+</div>
+<div class="mobile-menu js-menu-container">
+  <div class="container">
+    <ul class="mobile-menu__logo-and-button_wrapper">
+      <li>
         <a class="page-header__logo" href="#">
           <picture>
-            <source
-              srcset="./images/logo/logo-desk.png 1x, ./images/logo/logo-desk@2x.png 2x"
-              media="(min-width:1200px)"
-              type="image/png"
-            />
-            <source
-              srcset="./images/logo/logo-tab.png 1x, ./images/logo/logo-tab@2x.png 2x"
-              media="(min-width:768px)"
-              type="image/png"
-            />
-            <source
-              srcset="./images/logo/logo-mobile.png 1x, ./images/logo/logo-mobile@2x.png 2x"
-              media="(max-width:767px)"
-              type="image/png"
-            />
+            <source srcset="./images/logo/logo-desk.png 1x, ./images/logo/logo-desk@2x.png 2x"
+              media="(min-width:1200px)" type="image/png" />
+            <source srcset="./images/logo/logo-tab.png 1x, ./images/logo/logo-tab@2x.png 2x" media="(min-width:768px)"
+              type="image/png" />
+            <source srcset="./images/logo/logo-mobile.png 1x, ./images/logo/logo-mobile@2x.png 2x"
+              media="(max-width:767px)" type="image/png" />
             <img src="./images/logo/logo-mobile.png" alt="ice cream logo" />
           </picture>
         </a>
-        <button
-          type="button"
-          class="mobile-menu__close-btn mobile-menu__close-btn_position js-close-menu"
-        >
+      </li>
+      <li>
+        <button type="button" class="mobile-menu__close-btn  js-close-menu">
           <svg class="mobile-menu__close-icon" aria-label="mobile menu close icon">
             <use href="./images/sprite.svg#icon-close"></use>
           </svg>
         </button>
-        <nav class="mobile-menu__nav">
-          <ul class="mobile-menu__list">
-            <li>
-              <a class="mobile-menu__link" href="#">Home</a>
-            </li>
-            <li>
-              <a class="mobile-menu__link" href="#">How it’s made?</a>
-            </li>
-            <li>
-              <a class="mobile-menu__link" href="#">Our products</a>
-            </li>
-            <li>
-              <a class="mobile-menu__link" href="#">Contact</a>
-            </li>
-          </ul>
-        </nav>
-        <button type="button" class="button mobile-menu__order-btn">Buy now</button>
-      </div>
-    </div>
-  </header>
+      </li>
+    </ul>
+    <nav class="mobile-menu__nav">
+      <ul class="mobile-menu__list">
+        <li>
+          <a class="mobile-menu__link" href="#">Home</a>
+        </li>
+        <li>
+          <a class="mobile-menu__link" href="#about">How it’s made?</a>
+        </li>
+        <li>
+          <a class="mobile-menu__link" href="#">Our products</a>
+        </li>
+        <li>
+          <a class="mobile-menu__link" href="#contacts">Contact</a>
+        </li>
+      </ul>
+    </nav>
+    <button type="button" class="buy-now-modal-btn button-order button-order_tablet-menu-hidden">Buy now
+      <svg class="button-icon" aria-label="buy now icon">
+        <use href="./images/icon-button.svg#icon-btn"></use>
+      </svg>
+    </button>
+  </div>
 </div>
