@@ -1,5 +1,5 @@
-.buy-now-modal-btn {
-  width: 152px;
+.open-map-modal-btn {
+  width: 134px;
   height: 42px;
   display: flex;
   justify-content: center;
@@ -7,9 +7,9 @@
   background-color: var(--accent-primary-color);
   border-radius: 10px;
   font-weight: var(--modal-btn-font-weight);
-  font-size: 14px;
-  line-height: 1.21;
-  color: var(--modal-btn-font-color);
+  font-size: 12px;
+  line-height: 1.25;
+  color: var(--secondary-color);
   transition: background-color var(--animation), color var(--animation);
 
   &:hover {
@@ -24,5 +24,13 @@
 
   &:disabled {
     background-color: var(--disabled-color);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .submit-modal-btn {
+    width: 145px;
+    font-size: 14px;
+    line-height: 1.21;
   }
 }
