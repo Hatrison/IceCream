@@ -1,5 +1,5 @@
 <section class="contacts">
-  <div class="container">
+  <div class="container contacts__container">
     <h2 class="visually-hidden">Contacts</h2>
     <ul class="contact-list">
       <li class="contact-list__item">
@@ -106,7 +106,23 @@
       </li>
     </ul>
 
-    <button type="button" class="button__contacts">Our Locations</button>
-    <button type="button" class="button__contacts">Franchise</button>
+    <ul class="buttons-list">
+      <li class="buttons-list__item">
+        <button type="button" class="our-locations-modal-btn">
+          Our Locations
+          <svg class="arrow" width="12" height="12" aria-label="Exit to locations">
+            <use href="/src/images/icon-button.svg#icon-btn"></use>
+          </svg>
+        </button>
+      </li>
+      <li class="buttons-list__item">
+        <button type="button" class="franchise-modal-btn">
+          Franchise
+          <svg class="arrow" width="12" height="12" aria-label="Exit to franchise">
+            <use href="/src/images/icon-button.svg#icon-btn"></use>
+          </svg>
+        </button>
+      </li>
+    </ul>
   </div>
 </section>
