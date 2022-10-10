@@ -27,13 +27,9 @@
 
 .advantages__title {
   font-family: 'Roboto';
-
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
-
-  text-align: center;
-
   text-transform: uppercase;
   display: block;
   text-align: center;
@@ -44,7 +40,6 @@
 
     font-size: 48px;
     line-height: 1.23;
-    text-align: center;
 
     text-transform: uppercase;
   }
@@ -61,7 +56,6 @@
   max-width: 230px;
   margin: 0 auto;
   text-align: center;
-
   color: var(--primary-color);
   @media screen and (min-width: 768px) {
     max-width: 152px;
