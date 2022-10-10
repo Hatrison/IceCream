@@ -19,33 +19,36 @@
     font-size: 12px;
     line-height: 1.76;
 }
-.about__btn{
-    display: inline-flex;
-    align-items: center;
-    padding: 12px 34px;
+// .about__btn{
+//     display: inline-flex;
+//     align-items: center;
+//     padding: 12px 34px;
 
-    font-weight: 600;
-    line-height: 1.29;
-    color: #131313;
+//     font-weight: 600;
+//     line-height: 1.29;
+//     color: #131313;
 
-    background: var(--accent-primary-color);
-    border-radius: 10px;
-    border: none;
-    transition: background-color 250ms linear, color 250ms linear ;
-    &:hover{
-        background-color: var(--accent-secondary-color);
-    }
-    &:focus{
-        color: var(--primary-color);
-    }
-}
+//     background: var(--accent-primary-color);
+//     border-radius: 10px;
+//     border: none;
+//     transition: background-color 250ms linear, color 250ms linear ;
+//     &:hover{
+//         background-color: var(--accent-secondary-color);
+//     }
+//     &:focus{
+//         color: var(--primary-color);
+//     }
+// }
+/*btn*/
+
 .about__icon-read-mo{
     margin-left: 5px;
     transition: fill 250ms linear;
-.about__btn:focus &{
+.read-more-modal-btn:focus &{
     fill: var(--primary-color);
 }    
 }
+/*mob*/
 @media screen and (max-width: 767px){
 .about__title{
     width: 200px;
@@ -63,13 +66,18 @@
     padding-right: 50px;
 }
 .about__text.mob-bottom {
+    line-height: 1.62;
     margin-top: 4px;
     margin-bottom: 20px;
 }
 .about__text.mob-hidden{
     display: none;
 }
+.read-more-modal-btn{
+    margin: 0 auto;
 }
+}
+/*tab*/
 @media screen and (min-width: 768px) {
     .about {
         padding-bottom: 48px;
@@ -102,13 +110,12 @@
     .about__text.mob-bottom{
         margin-bottom: 8px;
     }
-     .about__text.mob-hidden{
+    .about__text.mob-hidden{
+        line-height: 1.94;
         margin-bottom: 48px;;
     }
-    .about__btn{
-        float: left;
-    }
 }
+/*desk*/
 @media screen and (min-width: 1200px) {
     .about {
         padding-bottom: 60px;
@@ -126,6 +133,12 @@
     }
     .about__text{
         font-size: 16px;
-        //padding-right: 121px;
-}
+    }
+    .about__text.mob-bottom{
+        font-size: 14px;
+        line-height: 1.94;
+    }
+    .about__text.mob-hidden{
+        font-size: 14px;
+    }
 }
