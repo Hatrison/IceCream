@@ -59,14 +59,14 @@ window.onload = () => {
     timerGallery = setTimeout(() => {
       playSlideGallery((currentSlideGallery += 1));
     }, speedGallery);
-
-    leftArrow.addEventListener('click', function () {
-      playSlideGallery((currentSlideGallery -= 1));
-    });
-    rightArrow.addEventListener('click', function () {
-      playSlideGallery((currentSlideGallery += 1));
-    });
   };
+
+  leftArrow.addEventListener('click', function () {
+    playSlideGallery((currentSlideGallery -= 1));
+  });
+  rightArrow.addEventListener('click', function () {
+    playSlideGallery((currentSlideGallery += 1));
+  });
 
   playSlideGallery(currentSlideGallery);
   playSlide(currentSlide);
