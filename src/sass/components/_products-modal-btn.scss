@@ -1,0 +1,39 @@
+.products-modal-btn {
+  width: 62px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border: 2px solid var(--accent-primary-color);
+  border-radius: 8px;
+  font-weight: var(--modal-btn-font-weight);
+  font-size: 8px;
+  line-height: 1.25;
+  color: var(--modal-btn-font-color);
+  transition: border-color var(--animation), color var(--animation);
+
+  &:hover {
+    border-color: var(--accent-secondary-color);
+  }
+
+  &:focus {
+    border-color: var(--accent-secondary-color);
+    color: var(--primary-color);
+    outline: none;
+  }
+
+  &:disabled {
+    border-color: var(--disabled-color);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .products-modal-btn {
+    width: 134px;
+    height: 42px;
+    border-radius: 10px;
+    font-size: 14px;
+    line-height: 1.29;
+  }
+}
