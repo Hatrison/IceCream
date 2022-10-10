@@ -6,6 +6,8 @@ let dots = Array.prototype.slice.call(document.getElementById('slider-dots').chi
   timer;
 
 let pictures = Array.prototype.slice.call(document.getElementById('pictures').children),
+  leftArrow = document.getElementById('left-arrow'),
+  rightArrow = document.getElementById('right-arrow'),
   speedGallery = 5000,
   currentSlideGallery = 0,
   currentActiveGallery = 0,
@@ -57,6 +59,13 @@ window.onload = () => {
     timerGallery = setTimeout(() => {
       playSlideGallery((currentSlideGallery += 1));
     }, speedGallery);
+
+    leftArrow.addEventListener('click', function () {
+      playSlideGallery((currentSlideGallery -= 1));
+    });
+    rightArrow.addEventListener('click', function () {
+      playSlideGallery((currentSlideGallery += 1));
+    });
   };
 
   playSlideGallery(currentSlideGallery);
