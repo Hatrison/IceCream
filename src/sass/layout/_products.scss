@@ -1,20 +1,18 @@
-.products {
-  .container {
+.products .container {
     padding-top: 60px;
     padding-bottom: 60px;
   }
 
-  .subtitle {
-    color: var(--secondary-color);
-    text-align: center;
-    margin-bottom: 12px;
-  }
+.products-section__subtitle {
+  color: var(--secondary-color);
+  text-align: center;
+  margin-bottom: 12px;
+}
 
-  .title {
-    color: var(--secondary-color);
-    text-align: center;
-    margin-bottom: 148px;
-  }
+.products-section__title {
+  color: var(--secondary-color);
+  text-align: center;
+  margin-bottom: 148px;
 }
 
 .products__title {
@@ -238,12 +236,8 @@
     margin-bottom: 30px;
   }
 
-  .products {
-    .title {
-      color: var(--secondary-color);
-      text-align: center;
+  .products-section__title {
       margin-bottom: 303px;
-    }
   }
 
   .products__card {
