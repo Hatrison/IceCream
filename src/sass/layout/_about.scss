@@ -19,28 +19,7 @@
     font-size: 12px;
     line-height: 1.76;
 }
-// .about__btn{
-//     display: inline-flex;
-//     align-items: center;
-//     padding: 12px 34px;
-
-//     font-weight: 600;
-//     line-height: 1.29;
-//     color: #131313;
-
-//     background: var(--accent-primary-color);
-//     border-radius: 10px;
-//     border: none;
-//     transition: background-color 250ms linear, color 250ms linear ;
-//     &:hover{
-//         background-color: var(--accent-secondary-color);
-//     }
-//     &:focus{
-//         color: var(--primary-color);
-//     }
-// }
 /*btn*/
-
 .about__icon-read-mo{
     margin-left: 5px;
     transition: fill 250ms linear;
@@ -73,7 +52,7 @@
 .about__text.mob-hidden{
     display: none;
 }
-.read-more-modal-btn{
+.about__btn-read-mo{
     margin: 0 auto;
 }
 }
