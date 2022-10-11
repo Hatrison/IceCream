@@ -1,9 +1,17 @@
 let dots = Array.prototype.slice.call(document.getElementById('slider-dots').children),
   reviews = Array.prototype.slice.call(document.getElementById('slider-reviews').children),
-  speed = 10000,
+  speed = 5000,
   currentSlide = 0,
   currentActive = 0,
   timer;
+
+let pictures = Array.prototype.slice.call(document.getElementById('pictures').children),
+  leftArrow = document.getElementById('left-arrow'),
+  rightArrow = document.getElementById('right-arrow'),
+  speedGallery = 5000,
+  currentSlideGallery = 0,
+  currentActiveGallery = 0,
+  timerGallery;
 
 window.onload = () => {
   const playSlide = slide => {
@@ -34,6 +42,33 @@ window.onload = () => {
     });
   }
 
+  const playSlideGallery = slide => {
+    for (let k = 0; k < pictures.length; k++) {
+      pictures[k].classList.remove('picture_active');
+      pictures[k].classList.remove('picture_inactive');
+    }
+    if (slide < 0) slide = currentSlideGallery = pictures.length - 1;
+    if (slide > pictures.length - 1) slide = currentSlideGallery = 0;
+    if (currentActiveGallery != currentSlideGallery)
+      pictures[currentActiveGallery].classList.add('picture_inactive');
+    pictures[slide].classList.add('picture_active');
+
+    currentActiveGallery = currentSlideGallery;
+
+    clearTimeout(timerGallery);
+    timerGallery = setTimeout(() => {
+      playSlideGallery((currentSlideGallery += 1));
+    }, speedGallery);
+  };
+
+  leftArrow.addEventListener('click', function () {
+    playSlideGallery((currentSlideGallery -= 1));
+  });
+  rightArrow.addEventListener('click', function () {
+    playSlideGallery((currentSlideGallery += 1));
+  });
+
+  playSlideGallery(currentSlideGallery);
   playSlide(currentSlide);
 };
 
