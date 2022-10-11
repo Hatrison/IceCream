@@ -229,9 +229,9 @@ margin-top: 61px;
 
 
 @media screen and (min-width: 768px){
-  .container {
-      max-width: 768px;
-    }
+  // .container {
+  //     max-width: 768px;
+  //   }
 
         .page-hero{
   margin-top: 40px;
@@ -305,5 +305,6 @@ margin-top: 61px;
 
 .page-hero__points{
   width: 767px;
+  top: 284px;
 }
 }
