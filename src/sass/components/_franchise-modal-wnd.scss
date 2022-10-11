@@ -4,7 +4,7 @@
 
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+
   transform: scale(1) translate(-50%, -50%);
 
   border: var(--primary-border);
@@ -12,15 +12,9 @@
 
   max-width: 280px;
 
-  opacity: 1;
-  visibility: visible;
   background-color: var(--primary-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
-
-  transition-property: transform, opacity, visibility;
-  transition-duration: 250ms;
-  transition-timing-function: linear;
 
   @media (min-width: 768px) {
     max-width: 568px;
@@ -28,10 +22,8 @@
   }
 }
 
-.backdrop-contacts.is-hidden .modal__franchise {
-  opacity: 0;
-  visibility: hidden;
-  transform: translate(-50%, -50%) scale(1.5);
+.modal__container--nonemargin {
+  margin-bottom: 0;
 }
 
 .franchise-form {
@@ -90,13 +82,30 @@
   border-radius: 10px;
   margin-bottom: 12px;
 
+  background-color: var(--primary-color);
   color: var(--secondary-color);
+
   font-size: 12px;
   line-height: 1.41;
 
   padding: 12px 12px;
   outline: none;
   transition: border-color 250ms linear;
+
+  &:not(:placeholder-shown):required:invalid {
+    border-color: rgb(255, 0, 0);
+  }
+
+  &::placeholder {
+    font-size: 12px;
+    line-height: 1.41;
+    color: var(--secondary-color);
+
+    @media screen and (min-width: 768px) {
+      font-size: 14px;
+      line-height: 1.42;
+    }
+  }
 
   &:focus {
     border-color: var(--accent-primary-color);
@@ -118,6 +127,7 @@
   padding: 12px 12px;
   margin-bottom: 24px;
 
+  background-color: var(--primary-color);
   color: var(--secondary-color);
 
   font-size: 12px;
@@ -128,6 +138,17 @@
   outline: 1px solid transparent;
 
   transition: border 250ms linear;
+
+  &::placeholder {
+    font-size: 12px;
+    line-height: 1.41;
+    color: var(--secondary-color);
+
+    @media screen and (min-width: 768px) {
+      font-size: 14px;
+      line-height: 1.42;
+    }
+  }
 
   &:focus {
     border: 1px solid var(--accent-primary-color);

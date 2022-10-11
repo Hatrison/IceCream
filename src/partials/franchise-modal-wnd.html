@@ -7,7 +7,7 @@
         </svg>
       </button>
     </div>
-    <div class="modal__container">
+    <div class="modal__container modal__container--nonemargin">
       <form class="franchise-form">
         <p class="franchise-form__title">Thank you for your interest in owning an Ice Cream shop</p>
         <p class="franchise__notice">
@@ -35,8 +35,9 @@
             type="tel"
             name="tel"
             id="tel"
-            pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}"
+            pattern="[0-9]{3}[0-9]{3}[0-9]{3}"
             placeholder="Phone"
+            title="exmple: 643727423"
             required
           />
         </div>
@@ -48,6 +49,7 @@
             name="mail"
             id="mail"
             pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+            title="exmple: icecream@ice.crem"
             placeholder="Email"
             required
           />
@@ -62,7 +64,7 @@
           ></textarea>
         </div>
 
-        <button class="submit-modal-btn submit-modal-btn--position" type="submit">Send</button>
+        <button class="submit-modal-btn submit-modal-btn--position" type="submit">Submit</button>
       </form>
     </div>
   </div>
