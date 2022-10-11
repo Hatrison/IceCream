@@ -1,11 +1,15 @@
 .modal__franchise {
-  position: relative;
+  position: absolute;
   padding: 28px 30px 28px 29px;
 
   top: 50%;
   left: 50%;
 
+  opacity: 1;
+
   transform: scale(1) translate(-50%, -50%);
+
+  transition: transform var(--animation), opacity var(--animation);
 
   border: var(--primary-border);
   border-radius: 10px;
@@ -20,6 +24,11 @@
     max-width: 568px;
     padding: 32px 60px;
   }
+}
+
+.backdrop.is-hidden .modal__franchise {
+  transform: translate(-50%, -50%) scale(1.1);
+  opacity: 0;
 }
 
 .modal__container--nonemargin {
@@ -82,7 +91,7 @@
   border-radius: 10px;
   margin-bottom: 12px;
 
-  background-color: var(--primary-color);
+  background-color: rgba(248, 210, 78, 0.1);
   color: var(--secondary-color);
 
   font-size: 12px;
@@ -127,7 +136,7 @@
   padding: 12px 12px;
   margin-bottom: 24px;
 
-  background-color: var(--primary-color);
+  background-color: rgba(248, 210, 78, 0.1);
   color: var(--secondary-color);
 
   font-size: 12px;
