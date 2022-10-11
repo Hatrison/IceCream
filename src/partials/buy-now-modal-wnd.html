@@ -1,0 +1,69 @@
+<div class="buy-now-backdrop buy-now-backdrop__position is-hidden" data-modal>
+  <div class="buy-now-modal buy-now-modal__position">
+    <svg class="buy-now-modal__cross" width="20" height="20" data-modal-close>
+      <use href="../images/modal-windows/clarity_close-line.svg"></use>
+    </svg>
+
+    <p class="buy-now__text">Buy now</p>
+
+    <div class="ingredient__box">
+      <ul class="ingredient link">
+        <li class="ingredient__item">
+          <p class="ingredient__text">ice coffee</p>
+        </li>
+
+        <li class="ingredient__item">
+          <p class="ingredient__text">ice cream</p>
+        </li>
+        <li class="ingredient__item">
+          <p class="ingredient__text">milkshake</p>
+        </li>
+      </ul>
+    </div>
+
+    <form class="form">
+      <div class="form__box">
+        <label for="name-one" class="form__label"></label>
+        <!-- <div class="icon"> -->
+        <input
+          type="text"
+          class="icon-input"
+          name="name"
+          id="name-one"
+          placeholder="Name"
+          autocomplete="off"
+        />
+
+        <!-- </div> -->
+      </div>
+
+      <div class="form__box">
+        <label for="name-tel" class="form__label"></label>
+        <!-- <div class="icon"> -->
+        <input
+          type="tel"
+          class="icon-input"
+          name="name"
+          id="name-tel"
+          placeholder="Phone"
+          autocomplete="off"
+        />
+
+        <!-- </div> -->
+      </div>
+
+      <div class="coments modal__coments">
+        <label for="comments" class="coments__label"></label>
+        <textarea
+          class="coments__text"
+          name="comments"
+          id="comments"
+          rows="8"
+          placeholder="Comment"
+        ></textarea>
+      </div>
+
+      <button class="button buy-now-modal-btn" type="submit">Submit</button>
+    </form>
+  </div>
+</div>
