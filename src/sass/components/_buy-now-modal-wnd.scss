@@ -67,10 +67,10 @@ color: #131313;
 
 .buy-now-modal__cross {
     position: absolute;
-    right: 8px;
-    top: 8px;
-    width: 20px;
-    height: 20px;
+    right: 11.7px;
+    top: 11.6px;
+    width: 9px;
+    height: 8.9px;
     display: block;
     background-color: #f5f4fa;
     border-radius: 50%;
@@ -92,17 +92,15 @@ color: #131313;
 font-weight: 400;
 font-size: 14px;
 line-height: 140%;
-/* identical to box height, or 20px */
-
 
 color: #131313;
-    @include font(18px, 700, 1.15, 0.03em, center);
+    @include font(14px, 400, 140%,);
         display: block;
         color: #212121;
-        margin-bottom: 12px;
+        margin-bottom: 11px;
     
         @media screen and (min-width: 767px) {
-            @include font(20px, 700, 1.15, 0.03em, center);
+            @include font(20px, 400, 140%,);
         }
 }
 
