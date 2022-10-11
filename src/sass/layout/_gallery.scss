@@ -51,7 +51,7 @@
 
 .arrow-left {
   transform: translateY(-50%) rotateY(180deg);
-  left: 15px;
+  left: -15px;
 
   &:hover {
     transform: translateY(-50%) rotateY(180deg) scale(1.2);
@@ -59,7 +59,7 @@
 }
 
 .arrow-right {
-  right: 15px;
+  right: -15px;
 }
 
 .arrow-gallery__icon {
@@ -96,11 +96,11 @@
   }
 
   .arrow-left {
-    left: 50px;
+    left: -25px;
   }
 
   .arrow-right {
-    right: 50px;
+    right: -25px;
   }
 
   .arrow-gallery__icon {
@@ -120,11 +120,11 @@
   }
 
   .arrow-left {
-    left: 100px;
+    left: -30px;
   }
 
   .arrow-right {
-    right: 100px;
+    right: -30px;
   }
 
   .arrow-gallery__icon {
