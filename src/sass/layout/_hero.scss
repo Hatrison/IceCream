@@ -1,9 +1,3 @@
-// .container{
-//   width: 1200px;
-//   padding-left: 17px;
-//   padding-right: 17px;
-// }
-
 .page{
   background-color: var(--primary-bgc);
 }
@@ -145,12 +139,6 @@ font-family: var(--primary-font);
 
 .page-hero__image{
   position: absolute;
-  top: 0;
-  right: 0;
-  width: 484px;
-  height: 590px;
-  // top: -90px;
-  // right: 65px;
 }
 
 @media screen and (max-width: 767px) {
@@ -164,7 +152,7 @@ font-family: var(--primary-font);
     }
 
 .page-hero{
-margin-top: 61px;
+padding-top: 110px;
 }
 
 .page-hero__button{
@@ -188,14 +176,11 @@ margin-top: 61px;
 }
 
 .page-hero__image{
- top: 221px;
- width: 220px;
- height: 170px;
+ top: 227px;
 }
 
 .page-hero__points{
-  // left: 0;
-  top: 388px;
+  top: 452px;
 }
 .page-hero__button-products{
       font-size: 8px;
@@ -229,14 +214,10 @@ margin-top: 61px;
 
 
 @media screen and (min-width: 768px){
-  // .container {
-  //     max-width: 768px;
-  //   }
+  .page-hero {
+      padding-top: 104px;
+    }
 
-        .page-hero{
-  margin-top: 40px;
-        }
-  
 .page-hero__title{
   font-weight: 400;
     font-size: 18px;
@@ -280,7 +261,7 @@ margin-top: 61px;
 }
 
 .page-hero__about {
-  top: 30px;
+  top: 94px;
 }
 
 .page-hero-amount{
@@ -305,6 +286,65 @@ margin-top: 61px;
 
 .page-hero__points{
   width: 767px;
-  top: 284px;
+  top: 347px;
 }
+.page-hero__product-card{
+  position: relative;
+  z-index: 100;
+}
+.page-hero__image{
+  top: 15px;
+  left: 362px;
+}
+}
+@media screen and (min-width: 1200px) {
+  .page{
+    padding-top: 81px;
+  }
+ .page-hero__title{
+  width: 367px;
+  font-size: 38px;
+  line-height: 1.26;
+ }
+ .page-hero{
+  margin-top: 0px;
+  padding-top: 0;
+ }
+ .page-hero__button{
+  margin-top: 28px;
+  margin-bottom: 42px;
+  gap: 12px;
+ }
+ .page-hero__button-products{
+  padding: 12px 34px;
+  font-size: 14px;
+  line-height: 1.28;
+ }
+ .page-hero__button-about{
+  padding: 12px 34px;
+  font-size: 14px;
+  line-height: 1.28;
+ }
+ .page-hero__product{
+  padding-bottom: 65px;
+  gap: 14px;
+ }
+ .page-hero-amount{
+  font-size: 46px;
+ }
+ .page-hero__text{
+  font-size: 14px;
+  line-height: 1.21;
+ }
+ .page-hero__about{
+  top: 8px;
+ }
+ .page-hero__points{
+  width: 1200px;
+  top: 162px;
+ }
+ .page-hero__image{
+  top: -113px;
+  left: 560px;
+ }
 }
