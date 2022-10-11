@@ -5,8 +5,6 @@
   top: 50%;
   left: 50%;
 
-  opacity: 1;
-
   transform: scale(1) translate(-50%, -50%);
 
   transition: transform var(--animation), opacity var(--animation);
@@ -24,11 +22,6 @@
     max-width: 568px;
     padding: 32px 60px;
   }
-}
-
-.backdrop.is-hidden .modal__franchise {
-  transform: translate(-50%, -50%) scale(1.1);
-  opacity: 0;
 }
 
 .modal__container--nonemargin {
