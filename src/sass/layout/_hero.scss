@@ -206,11 +206,11 @@
     height: 40px;
     fill: var(--primary-color);
     transition: var(--animation);
-    
-      &:hover,
-      &:focus {
-        width: 50px;
-      }
+
+    &:hover,
+    &:focus {
+      width: 50px;
+    }
   }
   .page-hero__points {
     width: 767px;
@@ -227,7 +227,7 @@
 }
 @media screen and (min-width: 1200px) {
   .page {
-    padding-top: 81px;
+    padding-top: 118px;
   }
   .page-hero__title {
     width: 367px;
@@ -244,7 +244,6 @@
     gap: 12px;
     position: relative;
     z-index: 1001;
-
   }
   .page-hero__button-products {
     padding: 12px 34px;
@@ -269,11 +268,11 @@
     height: 40px;
     fill: var(--primary-color);
     transition: var(--animation);
-    
-      &:hover,
-      &:focus {
-        width: 50px;
-      }
+
+    &:hover,
+    &:focus {
+      width: 50px;
+    }
   }
   .page-hero__amount {
     font-size: 46px;
@@ -293,5 +292,4 @@
     top: -116px;
     left: 560px;
   }
-  
 }
