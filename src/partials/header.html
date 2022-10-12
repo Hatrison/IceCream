@@ -3,12 +3,21 @@
     <div class="container page-header__container">
       <a class="page-header__logo" href="#">
         <picture>
-          <source srcset="./images/logo/logo-desk.png 1x, ./images/logo/logo-desk@2x.png 2x" media="(min-width:1200px)"
-            type="image/png" />
-          <source srcset="./images/logo/logo-tab.png 1x, ./images/logo/logo-tab@2x.png 2x" media="(min-width:768px)"
-            type="image/png" />
-          <source srcset="./images/logo/logo-mobile.png 1x, ./images/logo/logo-mobile@2x.png 2x"
-            media="(max-width:767px)" type="image/png" />
+          <source
+            srcset="./images/logo/logo-desk.png 1x, ./images/logo/logo-desk@2x.png 2x"
+            media="(min-width:1200px)"
+            type="image/png"
+          />
+          <source
+            srcset="./images/logo/logo-tab.png 1x, ./images/logo/logo-tab@2x.png 2x"
+            media="(min-width:768px)"
+            type="image/png"
+          />
+          <source
+            srcset="./images/logo/logo-mobile.png 1x, ./images/logo/logo-mobile@2x.png 2x"
+            media="(max-width:767px)"
+            type="image/png"
+          />
           <img src="./images/logo/logo-mobile.png" alt="ice cream logo" />
         </picture>
       </a>
@@ -37,7 +46,8 @@
           </button>
         </li>
         <li class="item__button-order">
-          <button type="button" class="buy-now-modal-btn button-order">Buy now
+          <button type="button" class="buy-now-modal-btn button-order" buy-now-modal-open>
+            Buy now
             <svg class="button-icon" aria-label="buy now icon">
               <use href="./images/icon-button.svg#icon-btn"></use>
             </svg>
@@ -53,18 +63,27 @@
       <li>
         <a class="page-header__logo" href="#">
           <picture>
-            <source srcset="./images/logo/logo-desk.png 1x, ./images/logo/logo-desk@2x.png 2x"
-              media="(min-width:1200px)" type="image/png" />
-            <source srcset="./images/logo/logo-tab.png 1x, ./images/logo/logo-tab@2x.png 2x" media="(min-width:768px)"
-              type="image/png" />
-            <source srcset="./images/logo/logo-mobile.png 1x, ./images/logo/logo-mobile@2x.png 2x"
-              media="(max-width:767px)" type="image/png" />
+            <source
+              srcset="./images/logo/logo-desk.png 1x, ./images/logo/logo-desk@2x.png 2x"
+              media="(min-width:1200px)"
+              type="image/png"
+            />
+            <source
+              srcset="./images/logo/logo-tab.png 1x, ./images/logo/logo-tab@2x.png 2x"
+              media="(min-width:768px)"
+              type="image/png"
+            />
+            <source
+              srcset="./images/logo/logo-mobile.png 1x, ./images/logo/logo-mobile@2x.png 2x"
+              media="(max-width:767px)"
+              type="image/png"
+            />
             <img src="./images/logo/logo-mobile.png" alt="ice cream logo" />
           </picture>
         </a>
       </li>
       <li>
-        <button type="button" class="mobile-menu__close-btn  js-close-menu">
+        <button type="button" class="mobile-menu__close-btn js-close-menu">
           <svg class="mobile-menu__close-icon" aria-label="mobile menu close icon">
             <use href="./images/sprite.svg#icon-close"></use>
           </svg>
@@ -87,7 +106,12 @@
         </li>
       </ul>
     </nav>
-    <button type="button" class="buy-now-modal-btn button-order button-order_tablet-menu-hidden">Buy now
+    <button
+      type="button"
+      class="buy-now-modal-btn button-order button-order_tablet-menu-hidden"
+      buy-now-modal-open-mobile
+    >
+      Buy now
       <svg class="button-icon" aria-label="buy now icon">
         <use href="./images/icon-button.svg#icon-btn"></use>
       </svg>
