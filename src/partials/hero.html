@@ -1,99 +1,149 @@
 <section class="page">
-<div class="page-hero container">
-  <h1 class="page-hero__title">ice cream made with passion</h1>
-  <ul class="page-hero__button">
-    <li>
-      <form action="#products">
-      <button type="button" class="page-hero__button-products">Products</button>
-      </form>
-    </li>
-    <li>
-      <form action="#about">
-      <button type="button" class="page-hero__button-about">How it’s made?</button>
-      </form>
-    </li>
-  </ul>
-  <div class="page-hero__about">
-    <ul class="page-hero__list">
+  <div class="page-hero container">
+    <h1 class="page-hero__title">ice cream made with passion</h1>
+    <ul class="page-hero__button">
       <li>
-        <p class="page-hero-amount">
-          16
-        </p>
+        <a class="products-modal-btn" href="#products">Products</a>
       </li>
       <li>
-        <p class="page-hero__text">
-          cafes
-        </p>
+        <a class="how-its-made-modal-btn" href="#about">How it’s made?</a>
       </li>
     </ul>
-    <ul class="page-hero__list">
-      <li>
-        <p class="page-hero-amount">
-          23
-        </p>
-      </li>
-      <li>
-        <p class="page-hero__text">
-          food trucks
-        </p>
-      </li>
-    </ul>
+    <div class="page-hero__about">
+      <ul class="page-hero__list">
+        <li>
+          <p class="page-hero-amount">16</p>
+        </li>
+        <li>
+          <p class="page-hero__text">cafes</p>
+        </li>
+      </ul>
+      <ul class="page-hero__list">
+        <li>
+          <p class="page-hero-amount">23</p>
+        </li>
+        <li>
+          <p class="page-hero__text">food trucks</p>
+        </li>
+      </ul>
     </div>
-  <ul class="page-hero__product">
-    <li class="page-hero__product-card">
+    <ul class="page-hero__product">
+      <li class="page-hero__product-card">
+        <picture>
+          <source
+            srcset="
+              ./images/hero/group-ice-cream-1x-desk.webp 1x,
+              ./images/hero/group-ice-cream-2x-desk.webp 2x
+            "
+            media="(min-width: 1200px)"
+            type="image/webp"
+          />
+          <source
+            srcset="
+              ./images/hero/group-ice-cream-1x-desk.png 1x,
+              ./images/hero/group-ice-cream-2x-desk.png 2x
+            "
+            media="(min-width: 1200px)"
+          />
+
+          <source
+            srcset="
+              ./images/hero/group-ice-cream-1x-tab.webp 1x,
+              ./images/hero/group-ice-cream-2x-tab.webp 2x
+            "
+            media="(min-width: 768px)"
+            type="image/webp"
+          />
+          <source
+            srcset="
+              ./images/hero/group-ice-cream-1x-tab.png 1x,
+              ./images/hero/group-ice-cream-2x-tab.png 2x
+            "
+            media="(min-width: 768px)"
+          />
+
+          <img src="./images/hero/group-ice-cream-1x-desk.png" alt="#" />
+        </picture>
+      </li>
+      <li>
+        <p class="page-hero__product-text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+          ut labore et
+        </p>
+      </li>
+      <li>
+        <svg class="page-hero__icon-arrow" aria-label="icon-arrow">
+          <use href="./images/sprite.svg#icon-arrow"></use>
+        </svg>
+      </li>
+    </ul>
+    <div class="page-hero__points">
       <picture>
-        <source srcset="./images/hero/group-ice-cream-1x-desk.webp 1x, ./images/hero/group-ice-cream-2x-desk.webp 2x"
-          media="(min-width: 1200px)" type="image/webp">
-        <source srcset="./images/hero/group-ice-cream-1x-desk.png 1x, ./images/hero/group-ice-cream-2x-desk.png 2x"
-          media="(min-width: 1200px)">
-      
-        <source srcset="./images/hero/group-ice-cream-1x-tab.webp 1x, ./images/hero/group-ice-cream-2x-tab.webp 2x"
-          media="(min-width: 768px)" type="image/webp">
-        <source srcset="./images/hero/group-ice-cream-1x-tab.png 1x, ./images/hero/group-ice-cream-2x-tab.png 2x"
-          media="(min-width: 768px)">
-      
-        <img src="./images/hero/group-ice-cream-1x-desk.png" alt="#">
+        <source
+          srcset="./images/hero/points-1x-desk.webp 1x, ./images/hero/points-2x-desk.webp 2x"
+          media="(min-width: 1200px)"
+          type="image/webp"
+        />
+        <source
+          srcset="./images/hero/points-1x-desk.png 1x, ./images/hero/points-2x-desk.png 2x"
+          media="(min-width: 1200px)"
+        />
+
+        <source
+          srcset="./images/hero/points-1x-tab.webp 1x, ./images/hero/points-2x-tab.webp 2x"
+          media="(min-width: 768px)"
+          type="image/webp"
+        />
+        <source
+          srcset="./images/hero/points-1x-tab.png 1x, ./images/hero/points-2x-tab.png 2x"
+          media="(min-width: 768px)"
+        />
+
+        <source
+          srcset="./images/hero/points-1x-tel.webp 1x, ./images/hero/points-2x-tel.webp 2x"
+          media="(max-width: 767px)"
+          type="image/webp"
+        />
+        <source
+          srcset="./images/hero/points-1x-tel.png 1x, ./images/hero/points-2x-tel.png 2x"
+          media="(max-width: 767px)"
+        />
+
+        <img src="./images/hero/points-1x-desk.png" alt="#" />
       </picture>
-    </li>
-    <li>
-      <p class="page-hero__product-text">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-      </p>
-    </li>
-  </ul>
-  <div class="page-hero__points">
-    <picture>
-    <source srcset="./images/hero/points-1x-desk.webp 1x, ./images/hero/points-2x-desk.webp 2x"
-      media="(min-width: 1200px)" type="image/webp">
-    <source srcset="./images/hero/points-1x-desk.png 1x, ./images/hero/points-2x-desk.png 2x"
-      media="(min-width: 1200px)">
-    
-    <source srcset="./images/hero/points-1x-tab.webp 1x, ./images/hero/points-2x-tab.webp 2x" media="(min-width: 768px)"
-      type="image/webp">
-    <source srcset="./images/hero/points-1x-tab.png 1x, ./images/hero/points-2x-tab.png 2x" media="(min-width: 768px)">
-    
-    <source srcset="./images/hero/points-1x-tel.webp 1x, ./images/hero/points-2x-tel.webp 2x" media="(max-width: 767px)"
-      type="image/webp">
-    <source srcset="./images/hero/points-1x-tel.png 1x, ./images/hero/points-2x-tel.png 2x" media="(max-width: 767px)">
+    </div>
+    <picture class="page-hero__image">
+      <source
+        srcset="./images/hero/ice-cream-1x-desk.webp 1x, ./images/hero/ice-cream-2x-desk.webp 2x"
+        media="(min-width: 1200px)"
+        type="image/webp"
+      />
+      <source
+        srcset="./images/hero/ice-cream-1x-desk.png 1x, ./images/hero/ice-cream-2x-desk.png 2x"
+        media="(min-width: 1200px)"
+      />
 
-    <img src="./images/hero/points-1x-desk.png" alt="#">
-  </picture>
+      <source
+        srcset="./images/hero/ice-cream-1x-tab.webp 1x, ./images/hero/ice-cream-2x-tab.webp 2x"
+        media="(min-width: 768px)"
+        type="image/webp"
+      />
+      <source
+        srcset="./images/hero/ice-cream-1x-tab.png 1x, ./images/hero/ice-cream-2x-tab.png 2x"
+        media="(min-width: 768px)"
+      />
+
+      <source
+        srcset="./images/hero/ice-cream-1x-tel.webp 1x, ./images/hero/ice-cream-2x-tel.webp 2x"
+        media="(max-width: 767px)"
+        type="image/webp"
+      />
+      <source
+        srcset="./images/hero/ice-cream-1x-tel.png 1x, ./images/hero/ice-cream-2x-tel.png 2x"
+        media="(max-width: 767px)"
+      />
+
+      <img src="./images/hero/ice-cream-1x-desk.png" alt="#" />
+    </picture>
   </div>
-  <picture class="page-hero__image">
-    <source srcset="./images/hero/ice-cream-1x-desk.webp 1x, ./images/hero/ice-cream-2x-desk.webp 2x"
-      media="(min-width: 1200px)" type="image/webp">
-    <source srcset="./images/hero/ice-cream-1x-desk.png 1x, ./images/hero/ice-cream-2x-desk.png 2x"
-      media="(min-width: 1200px)">
-    
-    <source srcset="./images/hero/ice-cream-1x-tab.webp 1x, ./images/hero/ice-cream-2x-tab.webp 2x" media="(min-width: 768px)"
-      type="image/webp">
-    <source srcset="./images/hero/ice-cream-1x-tab.png 1x, ./images/hero/ice-cream-2x-tab.png 2x" media="(min-width: 768px)">
-    
-    <source srcset="./images/hero/ice-cream-1x-tel.webp 1x, ./images/hero/ice-cream-2x-tel.webp 2x" media="(max-width: 767px)"
-      type="image/webp">
-    <source srcset="./images/hero/ice-cream-1x-tel.png 1x, ./images/hero/ice-cream-2x-tel.png 2x" media="(max-width: 767px)">
-
-    <img src="./images/hero/ice-cream-1x-desk.png" alt="#">
-  </picture>
-</div>
 </section>
