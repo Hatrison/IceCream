@@ -1,0 +1,123 @@
+.about {
+  background-color: var(--primary-bgc);
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 42px;
+}
+.about__subtitle {
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+.about__title {
+  font-weight: 400; //дописала поскольку не подтянулось
+}
+.about__img {
+  display: block;
+  border-radius: 50%;
+}
+.about__text {
+  font-size: 12px;
+  line-height: 1.76;
+}
+/*btn*/
+.about__icon-read-mo {
+  margin-left: 5px;
+  transition: fill 250ms linear;
+  .read-more-modal-btn:focus & {
+    fill: var(--primary-color);
+  }
+}
+/*mob*/
+@media screen and (max-width: 767px) {
+  .about__title {
+    width: 200px;
+    margin: 0 auto;
+    margin-bottom: 54px;
+  }
+  .about__img {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    box-shadow: 0px -22px 0px 1px rgba(248, 210, 78, 0.7);
+  }
+  .about__text {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .about__text.mob-bottom {
+    line-height: 1.62;
+    margin-top: 4px;
+    margin-bottom: 20px;
+  }
+  .about__text.mob-hidden {
+    display: none;
+  }
+  .about__btn-read-mo {
+    margin: 0 auto;
+  }
+}
+/*tab*/
+@media screen and (min-width: 768px) {
+  .about {
+    padding-bottom: 48px;
+  }
+  .about__subtitle {
+    font-weight: 800;
+    line-height: 1.23;
+  }
+  .about__title {
+    line-height: 1.26;
+    letter-spacing: 0.06em;
+    margin-bottom: 98px;
+  }
+  .about__img-text-btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    //column-gap: 32px;
+  }
+  .about__img {
+    box-shadow: 0px -26px 0px 1px rgba(248, 210, 78, 0.7);
+  }
+  .about__text-btn {
+    width: 336px;
+  }
+  .about__text {
+    text-align: left;
+  }
+  .about__text.top,
+  .about__text.mob-bottom {
+    margin-bottom: 8px;
+  }
+  .about__text.mob-hidden {
+    line-height: 1.94;
+    margin-bottom: 48px;
+  }
+}
+/*desk*/
+@media screen and (min-width: 1200px) {
+  .about {
+    padding-bottom: 60px;
+  }
+  .about__title {
+    margin-bottom: 121px;
+  }
+  .about__img {
+    box-shadow: 0px -39px 0px 1px rgba(248, 210, 78, 0.7);
+    width: 500px;
+  }
+  .about__text-btn {
+    width: 463px;
+    margin-right: 100px;
+  }
+  .about__text {
+    font-size: 16px;
+  }
+  .about__text.mob-bottom {
+    font-size: 14px;
+    line-height: 1.94;
+  }
+  .about__text.mob-hidden {
+    font-size: 14px;
+  }
+}

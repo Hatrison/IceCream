@@ -1,0 +1,28 @@
+.read-more-modal-btn {
+  width: 164px;
+  height: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--accent-primary-color);
+  border-radius: 10px;
+  font-weight: var(--modal-btn-font-weight);
+  font-size: 14px;
+  line-height: 1.29;
+  color: var(--modal-btn-font-color);
+  transition: background-color var(--animation), color var(--animation);
+
+  &:hover {
+    background-color: var(--accent-secondary-color);
+  }
+
+  &:focus {
+    background-color: var(--accent-secondary-color);
+    color: var(--primary-color);
+    outline: none;
+  }
+
+  &:disabled {
+    background-color: var(--disabled-color);
+  }
+}
