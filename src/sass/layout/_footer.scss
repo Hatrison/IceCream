@@ -112,11 +112,11 @@
   }
 }
 
-.footer__link::hover .footer__icon,
-.footer__link::focus .footer__icon {
+.footer__link:hover .footer__icon,
+.footer__link:focus .footer__icon {
   transform: scale(0.9);
+  fill: var( --primary-color);
   }
-
 
 
 .footer__item:not(:last-child) {
