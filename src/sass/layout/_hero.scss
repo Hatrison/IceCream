@@ -9,14 +9,10 @@
 
 .page-hero__title {
   font-family: var(--secondary-font);
-  font-style: normal;
-  font-weight: 400;
   font-size: 38px;
   line-height: 1.26;
-  letter-spacing: 0.04em;
   text-transform: uppercase;
   width: 367px;
-  color: var(--primary-color);
 }
 
 .page-hero__button {
@@ -28,10 +24,7 @@
 }
 
 .page-hero__button-products {
-  font-family: 'Montserrat';
-  font-style: normal;
   font-weight: 600;
-  font-size: 14px;
   line-height: 1.29;
   align-items: center;
   text-align: center;
@@ -53,10 +46,7 @@
 }
 
 .page-hero__button-about {
-  font-family: 'Montserrat';
-  font-style: normal;
   font-weight: 600;
-  font-size: 14px;
   line-height: 1.29;
   display: flex;
   align-items: center;
@@ -83,23 +73,16 @@
   right: 16px;
 }
 
-.page-hero-amount {
-  font-family: var(--primary-font);
-  font-style: normal;
+.page-hero__amount {
   font-weight: 900;
   font-size: 46px;
   line-height: 56px;
   text-align: right;
-  letter-spacing: 0.04em;
   text-transform: uppercase;
   color: var(--secondary-color);
 }
 
 .page-hero__text {
-  font-family: var(--primary-font);
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
   line-height: 17px;
   text-align: right;
   color: var(--primary-color);
@@ -113,12 +96,7 @@
 }
 
 .page-hero__product-text {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
   line-height: 140%;
-  color: var(--primary-color);
   width: 200px;
 
   &::after {
@@ -141,11 +119,6 @@
 }
 
 @media screen and (max-width: 767px) {
-  .container {
-    max-width: 480px;
-    margin-left: auto;
-    margin-right: auto;
-  }
   .page {
     height: 500px;
   }
@@ -158,6 +131,8 @@
     gap: 8px;
     margin-top: 32px;
     margin-bottom: 0;
+    z-index: 10;
+    position: relative;
   }
   .page-hero__title {
     width: 247px;
@@ -180,34 +155,6 @@
   .page-hero__points {
     top: 450px;
   }
-  .page-hero__button-products {
-    font-size: 8px;
-    line-height: 1.25;
-    padding: 6px 17px;
-
-    &:hover {
-      border-color: var(--accent-secondary-color);
-    }
-
-    &:focus {
-      color: var(--primary-color);
-      border-color: var(--accent-secondary-color);
-    }
-  }
-
-  .page-hero__button-about {
-    font-size: 8px;
-    line-height: 1.25;
-    padding: 6px 12px;
-
-    &:hover {
-      color: var(--accent-secondary-color);
-    }
-
-    &:focus {
-      color: var(--primary-color);
-    }
-  }
 }
 
 @media screen and (min-width: 768px) {
@@ -216,39 +163,9 @@
   }
 
   .page-hero__title {
-    font-weight: 400;
     font-size: 18px;
     line-height: 23px;
     width: 181px;
-  }
-
-  .page-hero__button-products {
-    font-size: 8px;
-    line-height: 1.25;
-    padding: 6px 17px;
-
-    &:hover {
-      border-color: var(--accent-secondary-color);
-    }
-
-    &:focus {
-      color: var(--primary-color);
-      border-color: var(--accent-secondary-color);
-    }
-  }
-
-  .page-hero__button-about {
-    font-size: 8px;
-    line-height: 1.25;
-    padding: 6px 12px;
-
-    &:hover {
-      color: var(--accent-secondary-color);
-    }
-
-    &:focus {
-      color: var(--primary-color);
-    }
   }
 
   .page-hero__button {
@@ -261,7 +178,7 @@
     top: 94px;
   }
 
-  .page-hero-amount {
+  .page-hero__amount {
     font-size: 28px;
     line-height: 1.21;
   }
@@ -282,11 +199,18 @@
   }
   .page-hero__icon-arrow {
     position: absolute;
+    z-index: 101;
     bottom: 10px;
     left: 216px;
     width: 40px;
     height: 40px;
     fill: var(--primary-color);
+    transition: var(--animation);
+    
+      &:hover,
+      &:focus {
+        width: 50px;
+      }
   }
   .page-hero__points {
     width: 767px;
@@ -299,7 +223,6 @@
   .page-hero__image {
     top: 12px;
     left: 362px;
-    z-index: 1000;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -319,6 +242,9 @@
     margin-top: 28px;
     margin-bottom: 42px;
     gap: 12px;
+    position: relative;
+    z-index: 1001;
+
   }
   .page-hero__button-products {
     padding: 12px 34px;
@@ -336,13 +262,20 @@
   }
   .page-hero__icon-arrow {
     position: absolute;
+    z-index: 2000;
     bottom: 71px;
     left: 256px;
     width: 40px;
     height: 40px;
     fill: var(--primary-color);
+    transition: var(--animation);
+    
+      &:hover,
+      &:focus {
+        width: 50px;
+      }
   }
-  .page-hero-amount {
+  .page-hero__amount {
     font-size: 46px;
   }
   .page-hero__text {
@@ -359,6 +292,6 @@
   .page-hero__image {
     top: -116px;
     left: 560px;
-    z-index: 1000;
   }
+  
 }
