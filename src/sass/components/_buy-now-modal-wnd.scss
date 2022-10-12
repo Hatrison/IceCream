@@ -1,0 +1,215 @@
+.backdrop-buy {
+  z-index: 999999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+
+  transition: opacity var(--animation), visibility var(--animation);
+}
+
+.backdrop-buy.is-hidden {
+  pacity: 0;
+  isibility: hidden;
+  ointer-events: none;
+}
+
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(1.7);
+}
+
+.modal-buy {
+  background: #fcfcfc;
+  border: var(--primary-border);
+  border-radius: 10px;
+  position: absolute;
+  top: 120%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+
+  max-width: 280px;
+
+  background-color: #ffffff;
+
+  border-radius: 4px;
+  padding: 28px;
+  transition: transform var(--animation);
+
+  @media screen and (min-width: 768px) {
+    max-width: 568px;
+
+    padding: 32px 54px;
+  }
+}
+
+.close-btn {
+  position: absolute;
+  top: 8px;
+  padding: 0 0;
+  right: 8px;
+  width: 16px;
+  height: 16px;
+  background-color: #ffffff;
+  border: none;
+
+  color: #000000;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color var(--animation);
+  &:hover,
+  &:focus {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    color: black;
+  }
+}
+
+.close-icon {
+  fill: currentColor;
+}
+
+// форма модалки
+
+.modal-buy__title {
+  font-family: 'Seymour One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+
+  align-items: center;
+  display: flex;
+  justify-content: center;
+
+  color: #131313;
+  @media screen and (min-width: 768px) {
+    font-size: 20px;
+    line-height: 1.4;
+  }
+}
+
+.modal-buy__list {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    column-gap: 32px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+  }
+}
+.modal-buy__block {
+  position: relative;
+  width: 132px;
+  height: 136px;
+  margin-left: auto;
+  margin-right: auto;
+
+  margin-top: 86px;
+}
+
+.modal-buy__img {
+  position: absolute;
+  display: block;
+  top: -65px;
+
+  border-radius: 50%;
+}
+
+.modal-buy__img_kelsey {
+  box-shadow: 0px 7px 0px 1px rgba(10, 136, 23, 0.25);
+  background: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #d9d9d9;
+}
+
+.modal-buy__img_pariwat {
+  background: linear-gradient(0deg, rgba(248, 210, 78, 0.25), rgba(248, 210, 78, 0.25)), #d9d9d9;
+  box-shadow: 0px 7px 0px 1px rgba(248, 210, 78, 0.7);
+}
+
+.modal-buy__img_victor {
+  background: linear-gradient(0deg, rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7)), #d9d9d9;
+  box-shadow: 0px 7px 0px 1px rgba(213, 117, 63, 0.7);
+}
+.modal-buy__text {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.25;
+  width: 132px;
+  height: 136px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  text-align: center;
+
+  color: #131313;
+  border-radius: 10px;
+
+  background: #fcfcfc;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 20px;
+}
+
+.modal-buy__text_kelsey {
+  border-left: 2px solid #96af8c;
+  border-right: 2px solid #96af8c;
+  border-bottom: 2px solid #96af8c;
+}
+
+.modal-buy__text_pariwat {
+  border-left: 2px solid #efd478;
+  border-right: 2px solid #efd478;
+  border-bottom: 2px solid #efd478;
+  background: #efd478;
+}
+.modal-buy__text_victor {
+  border-left: 2px solid #d6936d;
+  border-right: 2px solid #d6936d;
+  border-bottom: 2px solid #d6936d;
+}
+
+.modal-buy__form {
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+.modal-buy__label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 12px;
+  background: rgba(248, 210, 78, 0.1);
+  @media screen and (min-width: 768px) {
+    margin-bottom: 16px;
+  }
+}
+.modal-buy__input {
+  border: 1px solid #84a178;
+  border-radius: 10px;
+  padding: 8px 12px 7px;
+  @media screen and (min-width: 768px) {
+    min-height: 42px;
+  }
+}
+
+.modal-buy__input::placeholder {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 140%;
+  color: #131313;
+}
+
+.modal-buy__coments {
+  box-sizing: border-box;
+  min-width: 65px;
+  padding: 5px 12px;
+  border: 1px solid #84a178;
+  border-radius: 10px;
+  resize: none;
+
+  @media screen and (min-width: 768px) {
+    min-height: 84px;
+  }
+}

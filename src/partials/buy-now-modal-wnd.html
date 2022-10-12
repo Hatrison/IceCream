@@ -1,0 +1,79 @@
+<div class="container">
+  <div class="backdrop-buy is-hidden" buy-now-modal>
+    <div class="modal-buy">
+      <button type="button" class="close-btn" buy-now-modal-close>
+        <svg class="close-icon" width="16" height="16">
+          <use href="./images/sprite.svg#icon-close"></use>
+        </svg>
+      </button>
+
+      <!-- форма модального вікна -->
+      <h3 class="modal-buy__title">Buy now</h3>
+       
+      <ul class="modal-buy__list">
+        <li class="modal-buy__item">
+          <label>
+            <input class="visually-hidden" type="checkbox" name="kelsey" />
+            <div class="modal-buy__block">
+              <img
+                class="modal-buy__img modal-buy__img_kelsey"
+                src="./images/buy-now-modal/kelsey-mob.jpg"
+                alt="The image of a kelsey"
+              />
+              <span class="modal-buy__text modal-buy__text_kelsey">ice cream</span>
+            </div>
+          </label>
+        </li>
+        <li>
+          <label>
+            <input class="visually-hidden" type="checkbox" name="ice coffee" />
+            <div class="modal-buy__block">
+              <img
+                class="modal-buy__img modal-buy__img_pariwat"
+                src="./images/buy-now-modal/pariwat-mob.jpg"
+                alt="The image of a pariwat"
+              />
+              <span class="modal-buy__text modal-buy__text_pariwat">ice coffee</span>
+            </div>
+          </label>
+        </li>
+        <li>
+          <label>
+            <input class="visually-hidden" type="checkbox" name="milkshake" />
+            <div class="modal-buy__block">
+              <img
+                class="modal-buy__img modal-buy__img_victor"
+                src="./images/buy-now-modal/victor-mob.jpg"
+                alt="The image of a victor"
+              />
+              <span class="modal-buy__text modal-buy__text_victor">milkshake</span>
+            </div>
+          </label>
+        </li>
+      </ul>
+
+
+     <form action="#" class="modal-buy__form"></form>
+        <label class="modal-buy__label">
+          <input class="modal-buy__input" type="text" name="username" required placeholder="Name" />
+        </label>
+
+        <label class="modal-buy__label">
+          <input
+            class="modal-buy__input"
+            type="text"
+            name="user-tel"
+            required
+            placeholder="Phone"
+          />
+        </label>
+
+        <label class="modal-buy__label modal-buy__label-textarea">
+          <textarea class="modal-buy__coments" name="user-coments" placeholder="Comment"></textarea>
+        </label>
+
+        <button class="buy-now-modal-btn" type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+</div>
