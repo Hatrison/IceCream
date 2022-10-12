@@ -1,5 +1,5 @@
 .footer {
-  background-color: rgba(132, 161, 120, 1);
+  background-color: var(--primary-bgc);
 }
 
 .thumb {
@@ -7,12 +7,14 @@
   flex-direction: column;
   margin-bottom: 40px;
   padding-top: 39px;
+  gap: 42px;
 
   @media screen and (min-width: 768px) {
     padding-top: 40px;
     flex-direction: row;
     justify-content: space-between;
     margin-bottom: 32px;
+    gap: 0px;
   }
 
   @media screen and (min-width: 1200px) {
@@ -22,7 +24,6 @@
 }
 
 .footer__text {
-  font-family: var(--primary-font);
   font-weight: 700;
   color: rgba(252, 252, 252, 1);
   font-size: 18px;
@@ -32,7 +33,7 @@
   max-width: 271px;
 
   @media screen and (min-width: 768px) {
-    font-weight: 400;
+    font-weight: var(--primary-font-weight);
     font-size: 30px;
     line-height: 37px;
     margin-bottom: 9px;
@@ -50,13 +51,11 @@
 
 .footer__slog {
   max-width: 200px;
-  font-family: var(--primary-font);
   font-weight: 700;
   font-size: 34px;
   line-height: 41px;
-  letter-spacing: 0.04em;
   text-transform: uppercase;
-  color: #fcfcfc;
+  color: var(--primary-color);
 
   @media screen and (min-width: 768px) {
     font-size: 48px;
@@ -89,14 +88,18 @@
 
 .footer__link {
   display: flex;
-  background-color: #f8d24e;
+  background-color: var(--accent-primary-color);
   border-radius: 50%;
   justify-content: center;
   align-items: center;
-  transition-property: background-color;
+  transition-property: transform;
+  transition: var(--animation);
   transition: 250ms linear;
   width: 32px;
   height: 32px;
+  &:hover {
+    transform: scale(0.9);
+  }
 
   @media screen and (min-width: 768px) {
     width: 34px;
@@ -109,11 +112,12 @@
   }
 }
 
-.footer__link:hover .footer__icon,
-.footer__link:focus .footer__icon {
-  fill: white;
+.footer__link::hover .footer__icon,
+.footer__link::focus .footer__icon {
   transform: scale(0.9);
-}
+  }
+
+
 
 .footer__item:not(:last-child) {
   margin-right: 30px;
@@ -166,8 +170,7 @@
 
 .footer__icon {
   fill: var(--primary-bgc);
-  transition-property: background-color;
-  transition: 250ms linear;
+  transition: transform var(--animation), fill var(--animation);
 }
 
 .footer__communication {
@@ -178,7 +181,6 @@
 }
 
 .footer__tell {
-  font-family: var(--primary-font);
   font-weight: 700;
   font-size: 12px;
   line-height: 1.8;
@@ -198,7 +200,7 @@
 }
 
 .footer__number {
-  font-family: var(--primary-font);
+
   font-weight: 700;
   font-size: 12px;
   line-height: 1.8;
@@ -232,14 +234,12 @@
 
 .footer__copyright-text {
   width: 180px;
-  font-family: var(--primary-font);
   font-weight: 700;
-  font-size: 14px;
   line-height: 1.8;
   letter-spacing: 0.02em;
   text-align: center;
   padding: 0 10px;
-  color: #7a7a7a;
+  color: var(--color-copyright-text);
   @media screen and (min-width: 768px) {
     width: auto;
   }
