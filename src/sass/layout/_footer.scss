@@ -1,9 +1,6 @@
 .footer {
   background-color: rgba(132, 161, 120, 1);
-
-  .container {
-    margin-bottom: 49px;
-  }
+  margin-bottom: 49px;
 }
 
 .thumb {
@@ -22,22 +19,6 @@
   }
 }
 
-.footer__title {
-  max-width: 234px;
-  padding-top: 40px;
-
-  @media screen and (min-width: 768px) {
-    padding-top: 0px;
-    max-width: 340px;
-    margin-bottom: 0;
-  }
-
-  @media screen and (min-width: 1200px) {
-    max-width: 500px;
-    padding-top: 120px;
-  }
-}
-
 .footer__text {
   font-family: var(--primary-font);
   font-weight: 700;
@@ -45,12 +26,15 @@
   font-size: 18px;
   line-height: 1.7;
   margin-bottom: 16px;
+  letter-spacing: 0.04em;
   text-transform: uppercase;
+  max-width: 234px;
 
   @media screen and (min-width: 768px) {
-    font-size: 16px;
-    line-height: 1.1;
+    font-size: 26px;
+    line-height: 1.2;
     margin-bottom: 9px;
+    min-width: 352px;
   }
 
   @media screen and (min-width: 1200px) {
@@ -97,6 +81,9 @@
   transition: 250ms linear;
   width: 32px;
   height: 32px;
+  &:hover {
+    transform: scale(0.9);
+  }
 
   @media screen and (min-width: 768px) {
     width: 34px;
@@ -109,7 +96,7 @@
   }
 }
 
-.footer__link:not(:last-child) {
+.footer__item:not(:last-child) {
   margin-right: 30px;
 }
 
@@ -165,25 +152,12 @@
   &:hover,
   &:focus {
     fill: #fff;
+    transform: scale(0.9);
   }
 }
 
-.footer__soc__icon_github {
-  width: 20px;
-  height: 20px;
-
-  @media screen and (min-) {
-  }
-}
-
-.footer__soc__icon_telegram {
-  width: 20.4px;
-  height: 15.87;
-}
-
-.footer__soc__icon_facebook {
-  width: 9.35;
-  height: 20.4;
+.footer__communication {
+  display: flex;
 }
 
 .footer__tell {
@@ -191,9 +165,8 @@
   font-style: normal;
   font-weight: 700;
   font-size: 12px;
-  line-height: 186%;
+  line-height: 1.8;
   color: var(--secondary-color);
-
   display: flex;
   justify-content: flex-end;
 
@@ -208,12 +181,11 @@
   font-style: normal;
   font-weight: 700;
   font-size: 12px;
-  line-height: 186%;
+  line-height: 1.8;
   color: var(--primary-color);
   @media screen and (min-width: 768px) {
     flex-wrap: wrap;
     font-size: 14px;
-    line-height: 1, 8;
   }
 }
 
@@ -223,12 +195,18 @@
   justify-content: center;
   align-items: center;
   min-height: 83px;
+  padding-top: 16px;
+  padding-bottom: 62px;
   @media screen and (min-width: 768px) {
-    min-height: 73px;
+    min-height: 53px;
+    padding-top: 12px;
+    padding-bottom: 13px;
   }
 
   @media screen and (min-width: 1200px) {
-    min-height: 49px;
+    min-height: 45px;
+    padding-top: 12px;
+    padding-bottom: 11px;
   }
 }
 
@@ -237,15 +215,12 @@
   font-family: var(--primary-font);
   font-weight: 700;
   font-size: 14px;
-  line-height: 1.5;
+  line-height: 1.8;
   letter-spacing: 0.02em;
   text-align: center;
   padding: 0 10px;
   color: #7a7a7a;
   @media screen and (min-width: 768px) {
-  }
-
-  @media screen and (min-width: 1200px) {
-    width: 316px;
+    width: auto;
   }
 }
