@@ -2,37 +2,50 @@
   <div class="products-modal">
     <div class="products-modal__thumb">
       <button class="products-modal__close-btn">
-        <svg class="products-modal__icon" width="16" height="16" aria-label="close popup">
+        <svg class="products-modal__icon" width="12" height="12" aria-label="close popup">
           <use href="./images/close_btn.svg#icon-close_btn"></use>
         </svg>
       </button>
-      <p class="products-modal__title"></p>
-      <picture>
-        <source
-          srcset="
-            ./images/products-modal/ice-cream.webp    1x,
-            ./images/products-modal/ice-cream@2x.webp 2x
-          "
-          type="image/webp"
-        />
-        <source
-          srcset="
-            ./images/products-modal/ice-cream.jpg    1x,
-            ./images/products-modal/ice-cream@2x.jpg 2x
-          "
-        />
+      <p class="products-modal__title">Chololate icecream</p>
+      <div class="products-modal__image-wrappper">
+        <div class="products-modal__gradient"></div>
+        <picture class="products-modal__image">
+          <source
+            srcset="
+              ./images/products-modal/ice-cream.webp    1x,
+              ./images/products-modal/ice-cream@2x.webp 2x
+            "
+            type="image/webp"
+          />
+          <source
+            srcset="
+              ./images/products-modal/ice-cream.png    1x,
+              ./images/products-modal/ice-cream@2x.png 2x
+            "
+            type="image/png"
+          />
 
-        <img
-          src="./images/products-modal/ice-cream.jpg"
-          alt="Chokolate icecream"
-          class="products-modal__image"
-        />
-      </picture>
+          <img src="./images/products-modal/ice-cream.png" alt="Chokolate icecream" />
+        </picture>
+      </div>
+
       <ul class="products-modal__list">
-        <li class="products-modal__calories"></li>
-        <li class="products-modal__calories"></li>
-        <li class="products-modal__calories"></li>
-        <li class="products-modal__calories"></li>
+        <li class="products-modal__calories">
+          <span class="products-modal__account">320</span>
+          kcal
+        </li>
+        <li class="products-modal__calories">
+          <span class="products-modal__account">4g</span>
+          Prote...
+        </li>
+        <li class="products-modal__calories">
+          <span class="products-modal__account">8,2g</span>
+          Fats
+        </li>
+        <li class="products-modal__calories">
+          <span class="products-modal__account">40,4g</span>
+          Carbs
+        </li>
       </ul>
       <ul class="products-modal__ingredients">
         <li class="products-modal__ingredient"></li>
@@ -45,7 +58,7 @@
       <form action="" class="products-modal__form">
         <label
           ><input
-            class=""
+            class="products-modal__input"
             type="text"
             name="user-name"
             id="name"
@@ -56,7 +69,7 @@
         </label>
         <label
           ><input
-            class=""
+            class="products-modal__input"
             type="tel"
             name="tel"
             id="tel"
@@ -66,9 +79,18 @@
             required
         /></label>
         <label>
-          <textarea class="" name="comment" id="comment" placeholder="Comment"></textarea>
+          <textarea
+            class="products-modal__textarea"
+            name="comment"
+            id="comment"
+            placeholder="Comment"
+          ></textarea>
         </label>
-        <button class="submit-modal-btn">Submit</button>
+        <button
+          class="submit-modal-btn submit-modal-btn_mobile-ingredients products-modal__submit-modal-btn"
+        >
+          Submit
+        </button>
       </form>
     </div>
   </div>
