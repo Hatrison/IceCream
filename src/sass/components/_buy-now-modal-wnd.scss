@@ -85,10 +85,11 @@
 
 .modal-buy__block {
   position: relative;
-  width: 130px;
-  height: 136px;
-  margin-left: auto;
-  margin-right: auto;
+  display: block;
+  // width: 130px;
+  // height: 136px;
+  // margin-left: auto;
+  // margin-right: auto;
   margin-top: 86px;
   @media screen and (min-width: 768px) {
     margin-top: 63px;
@@ -118,12 +119,6 @@
   box-shadow: 0px 7px 0px 1px rgba(213, 117, 63, 0.7);
 }
 
-.modal-buy__checkbox-field {
-  display: block;
-  width: 132px;
-  height: 136px;
-}
-
 .modal-buy__text {
   font-weight: 700;
   font-size: 16px;
@@ -144,6 +139,14 @@
   padding-bottom: 20px;
 }
 
+.modal-buy__agree:checked + .modal-buy__text {
+  background-color: #96af8c;
+}
+
+.modal-buy__agree:not(:checked) + .modal-buy__text {
+  background-color: var(--primary-color);
+}
+
 .modal-buy__text_kelsey {
   border-left: 2px solid #96af8c;
   border-right: 2px solid #96af8c;
@@ -160,13 +163,6 @@
   border-left: 2px solid #d6936d;
   border-right: 2px solid #d6936d;
   border-bottom: 2px solid #d6936d;
-}
-
-.modal-buy__agree:checked + .modal-buy__text_kelsey {
-  background-color: #96af8c;
-  // position: absolute;
-  // width: 130px;
-  // height: 260px;
 }
 
 .modal-buy__label {
