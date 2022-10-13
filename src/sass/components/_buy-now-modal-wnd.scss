@@ -96,13 +96,11 @@
   line-height: 140%;
 
   color: #131313;
-  @include font(14px, 400, 140%);
   display: block;
   color: #212121;
   margin-bottom: 11px;
 
   @media screen and (min-width: 767px) {
-    @include font(20px, 400, 140%);
   }
 }
 
