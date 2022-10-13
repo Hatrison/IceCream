@@ -1,12 +1,15 @@
 .contacts {
-  background-image: linear-gradient(to bottom, transparent 25%, var(--primary-bgc) 25%);
+  background-image: linear-gradient(to bottom, transparent 27%, var(--primary-bgc) 27%);
+  padding-top: 48px;
 
   @media (min-width: 768px) {
-    background-image: linear-gradient(to bottom, transparent 48%, var(--primary-bgc) 48%);
+    background-image: linear-gradient(to bottom, transparent 53.5%, var(--primary-bgc) 53.5%);
+    padding-top: 80px;
   }
 
   @media (min-width: 1200px) {
-    background-image: linear-gradient(to bottom, transparent 15%, var(--primary-bgc) 15%);
+    background-image: linear-gradient(to bottom, transparent 26.5%, var(--primary-bgc) 26.5%);
+    padding-top: 100px;
   }
 }
 
