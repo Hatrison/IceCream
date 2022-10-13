@@ -1,0 +1,54 @@
+<div class="backdrop">
+  <div class="products-modal">
+    <div class="products-modal__thumb">
+      <button class="products-modal__close-btn">
+        <svg class="products-modal__icon" width="16" height="16" aria-label="close popup">
+          <use href="./images/close_btn.svg#icon-close_btn"></use>
+        </svg>
+      </button>
+      <p class="products-modal__title"></p>
+      <ul class="products-modal__list">
+        <li class="products-modal__calories"></li>
+        <li class="products-modal__calories"></li>
+        <li class="products-modal__calories"></li>
+        <li class="products-modal__calories"></li>
+      </ul>
+      <ul class="products-modal__ingredients">
+        <li class="products-modal__ingredient"></li>
+        <li class="products-modal__ingredient"></li>
+        <li class="products-modal__ingredient"></li>
+        <li class="products-modal__ingredient"></li>
+        <li class="products-modal__ingredient"></li>
+        <li class="products-modal__ingredient"></li>
+      </ul>
+      <form action="" class="products-modal__form">
+        <label
+          ><input
+            class=""
+            type="text"
+            name="user-name"
+            id="name"
+            pattern="[A-Za-z0-9_]{1,15}"
+            placeholder="Name"
+            required
+          />
+        </label>
+        <label
+          ><input
+            class=""
+            type="tel"
+            name="tel"
+            id="tel"
+            pattern="[0-9]{3}[0-9]{3}[0-9]{3}"
+            placeholder="Phone"
+            title="exmple: 643727423"
+            required
+        /></label>
+        <label>
+          <textarea class="" name="comment" id="comment" placeholder="Comment"></textarea>
+        </label>
+        <button class="submit-modal-btn">Submit</button>
+      </form>
+    </div>
+  </div>
+</div>
