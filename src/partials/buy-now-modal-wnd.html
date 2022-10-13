@@ -1,75 +1,75 @@
-<!-- <div class="is-hidden" buy-now-modal> -->
-<div class="modal-buy is-hidden" buy-now-modal>
-  <button type="button" class="close-btn" buy-now-modal-close>
-    <svg class="close-icon" width="16" height="16">
-      <use href="./images/sprite.svg#icon-close"></use>
-    </svg>
-  </button>
-
-  <div class="modal-bay">
+<div class="backdrop is-hidden" buy-now-modal>
+  <div class="modal-buy">
+    <button type="button" class="close-btn" buy-now-modal-close aria-label="button close order window">
+      <svg class="close-icon" width="16" height="16" aria-label="close icon">
+        <use href="./images/sprite.svg#icon-close"></use>
+      </svg>
+    </button>
     <h3 class="modal-buy__title">Buy now</h3>
-    <form action="#" class="modal-buy__form">
+    <form name="order-window" action="#" class="modal-buy__form">
       <ul class="modal-buy__list">
         <li class="modal-buy__item">
           <label>
-            <input class="modal-bay__agree visually-hidden" checked type="checkbox" name="kelsey" />
+            <input class="modal-buy__agree visually-hidden" checked type="checkbox" name="kelsey" value="kelsey" />
             <div class="modal-buy__block">
               <picture>
                 <source srcset="
-                      ./images/buy-now-modal/kelsey-mob.webp    1x,
-                      ./images/buy-now-modal/kelsey-mob@2x.webp 2x
-                    " type="image/webp" />
+                        ./images/buy-now-modal/kelsey-mob.webp    1x,
+                        ./images/buy-now-modal/kelsey-mob@2x.webp 2x
+                      " type="image/webp" />
                 <source srcset="
-                      ./images/buy-now-modal/kelsey-mob.jpg 1x,
-                      ./images/buy-now-modal/kelsey-mob.jpg 2x
-                    " />
+                        ./images/buy-now-modal/kelsey-mob.jpg 1x,
+                        ./images/buy-now-modal/kelsey-mob.jpg 2x
+                      " />
                 <img class="modal-buy__img modal-buy__img_kelsey" src="./images/buy-now-modal/kelsey-mob.jpg"
                   alt="The image of a kelsey" />
               </picture>
 
-              <span class="modal-buy__text modal-buy__text_kelsey">ice cream</span>
             </div>
+            <p class="modal-buy__text modal-buy__text_kelsey">ice cream</p>
           </label>
         </li>
         <li>
-          <label>
-            <input class="modal-bay__agree visually-hidden" type="checkbox" checked name="ice coffee" />
+          <label class="modal-">
+            <input class="modal-buy__agree visually-hidden" type="checkbox" checked name="ice coffee"
+              value="ice coffee" />
             <div class="modal-buy__block">
               <picture>
                 <source srcset="
-                      ./images/buy-now-modal/pariwat-mob.webp    1x,
-                      ./images/buy-now-modal/pariwat-mob@2x.webp 2x
-                    " type="image/webp" />
+                        ./images/buy-now-modal/pariwat-mob.webp    1x,
+                        ./images/buy-now-modal/pariwat-mob@2x.webp 2x
+                      " type="image/webp" />
                 <source srcset="
-                      ./images/buy-now-modal/pariwat-mob.jpg 1x,
-                      ./images/buy-now-modal/pariwat-mob.jpg 2x
-                    " />
+                        ./images/buy-now-modal/pariwat-mob.jpg 1x,
+                        ./images/buy-now-modal/pariwat-mob.jpg 2x
+                      " />
                 <img class="modal-buy__img modal-buy__img_pariwat" src="./images/buy-now-modal/pariwat-mob.jpg"
                   alt="The image of a pariwat" />
               </picture>
 
-              <span class="modal-buy__text modal-buy__text_pariwat">ice coffee</span>
+              <p class="modal-buy__text modal-buy__text_pariwat">ice coffee</p>
             </div>
           </label>
         </li>
         <li>
           <label>
-            <input class="modal-bay__agree visually-hidden" type="checkbox" checked name="milkshake" />
+            <input class="modal-buy__agree visually-hidden" type="checkbox" checked name="milkshake"
+              value="milkshake" />
             <div class="modal-buy__block">
               <picture>
                 <source srcset="
-                      ./images/buy-now-modal/victor-mob.webp    1x,
-                      ./images/buy-now-modal/victor-mob@2x.webp 2x
-                    " type="image/webp" />
+                        ./images/buy-now-modal/victor-mob.webp    1x,
+                        ./images/buy-now-modal/victor-mob@2x.webp 2x
+                      " type="image/webp" />
                 <source srcset="
-                      ./images/buy-now-modal/victor-mob.jpg 1x,
-                      ./images/buy-now-modal/victor-mob.jpg 2x
-                    " />
+                        ./images/buy-now-modal/victor-mob.jpg 1x,
+                        ./images/buy-now-modal/victor-mob.jpg 2x
+                      " />
                 <img class="modal-buy__img modal-buy__img_victor" src="./images/buy-now-modal/victor-mob.jpg"
                   alt="The image of a victor" />
               </picture>
 
-              <span class="modal-buy__text modal-buy__text_victor">milkshake</span>
+              <p class="modal-buy__text modal-buy__text_victor">milkshake</p>
             </div>
           </label>
         </li>
@@ -93,4 +93,3 @@
     </form>
   </div>
 </div>
-<!-- </div> -->

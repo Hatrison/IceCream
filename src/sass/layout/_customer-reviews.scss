@@ -42,6 +42,8 @@
 
 .review_inactive {
   opacity: 0;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .review_active {

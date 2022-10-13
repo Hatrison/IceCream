@@ -26,22 +26,17 @@
 }
 
 .advantages__title {
-  font-family: 'Roboto';
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
-  text-transform: uppercase;
   display: block;
   text-align: center;
   color: var(--primary-color);
   margin-bottom: 18px;
   @media screen and (min-width: 768px) {
     margin-bottom: 16px;
-
     font-size: 48px;
     line-height: 1.23;
-
-    text-transform: uppercase;
   }
   @media screen and (min-width: 1200px) {
     font-size: 58px;

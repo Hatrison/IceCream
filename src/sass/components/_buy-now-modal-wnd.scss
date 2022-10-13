@@ -1,59 +1,55 @@
 .modal-buy {
-  opacity: 1;
-  visibility: visible;
-  pointer-events: all;
-  border: var(--primary-border);
-  border-radius: 10px;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(1);
-  overflow: auto;
-  width: 280px;
-  height: 650px;
-  background-color: #ffffff;
+  top: 0;
+  left: 0;
+  z-index: 888;
 
-  border-radius: 4px;
+  width: 100%;
+  height: 100%;
   padding: 28px;
-  transition: transform var(--animation), opacity var(--animation);
-  transform: scale(1) translate(-50%, -50%);
-  background-color: var(--primary-color);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
 
-  @media screen and (min-width: 768px) {
-    width: 568px;
-    height: 644px;
+  background-color: #ffffff;
+  border-radius: 10px;
+
+  border: var(--primary-border);
+
+  transition: transform var(--animation), opacity var(--animation);
+
+  @media screen and (min-width: 480px) {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    max-width: 568px;
+    max-height: 644px;
     padding: 32px 54px;
   }
-}
-
-.modal-buy.is-hidden {
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
 }
 
 .close-btn {
   position: absolute;
   top: 8px;
-  padding: 0 0;
   right: 8px;
+
+  padding: 0;
   width: 16px;
   height: 16px;
-  background-color: #ffffff;
+
+  background-color: var(--primary-color);
   border: none;
 
-  color: #000000;
+  color: var(--secondary-color);
 
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: color var(--animation);
-  &:hover,
-  &:focus {
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    color: black;
+
+  @media screen and (min-width: 768px) {
+    top: 20px;
+    right: 20px;
+
+    width: 20px;
+    height: 20px;
   }
 }
 
@@ -67,12 +63,10 @@
   font-family: 'Seymour One';
   font-size: 16px;
   line-height: 1.5;
+  text-align: center;
 
-  align-items: center;
-  display: flex;
-  justify-content: center;
+  color: var(--secondary-color);
 
-  color: #131313;
   @media screen and (min-width: 768px) {
     font-size: 20px;
     line-height: 1.4;
@@ -123,6 +117,13 @@
   background: linear-gradient(0deg, rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7)), #d9d9d9;
   box-shadow: 0px 7px 0px 1px rgba(213, 117, 63, 0.7);
 }
+
+.modal-buy__checkbox-field {
+  display: block;
+  width: 132px;
+  height: 136px;
+}
+
 .modal-buy__text {
   font-weight: 700;
   font-size: 16px;
@@ -136,7 +137,7 @@
   color: var(--secondary-color);
   border-radius: 10px;
 
-  background: #fcfcfc;
+  background-color: var(--primary-color);
   display: flex;
   justify-content: center;
   align-items: flex-end;
@@ -153,7 +154,7 @@
   border-left: 2px solid #efd478;
   border-right: 2px solid #efd478;
   border-bottom: 2px solid #efd478;
-  background: #efd478;
+  // background: #efd478;
 }
 .modal-buy__text_victor {
   border-left: 2px solid #d6936d;
@@ -161,10 +162,11 @@
   border-bottom: 2px solid #d6936d;
 }
 
-.modal-bay__agree {
-  position: absolute;
-  width: 130px;
-  height: 260px;
+.modal-buy__agree:checked + .modal-buy__text_kelsey {
+  background-color: #96af8c;
+  // position: absolute;
+  // width: 130px;
+  // height: 260px;
 }
 
 .modal-buy__label {

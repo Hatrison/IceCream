@@ -26,7 +26,4 @@
   &:disabled {
     background-color: var(--disabled-color);
   }
-  @media screen and (min-width: 768px) {
-    width: 221px;
-  }
 }
