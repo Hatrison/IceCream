@@ -1,4 +1,7 @@
 .modal-buy {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: all;
   border: var(--primary-border);
   border-radius: 10px;
   position: absolute;
@@ -23,6 +26,12 @@
     height: 644px;
     padding: 32px 54px;
   }
+}
+
+.modal-buy.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
 }
 
 .close-btn {
