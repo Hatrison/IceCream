@@ -50,10 +50,6 @@
   }
 }
 
-.close-icon {
-  fill: currentColor;
-}
-
 // форма модалки
 
 .modal-buy__title {
@@ -75,7 +71,6 @@
   flex-direction: column;
   align-items: center;
   row-gap: 20px;
-
   margin-bottom: 24px;
 
   @media screen and (min-width: 768px) {
