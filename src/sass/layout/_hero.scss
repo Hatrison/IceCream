@@ -1,4 +1,4 @@
-.page {
+.hero {
   background-color: var(--primary-bgc);
 }
 
@@ -119,8 +119,9 @@
 }
 
 @media screen and (max-width: 767px) {
-  .page {
+  .hero {
     height: 500px;
+    overflow: hidden;
   }
 
   .page-hero {
@@ -149,11 +150,17 @@
   }
 
   .page-hero__image {
+    width: 276px;
     top: 227px;
+    left: 50%;
+    transform: translateX(-50%);
   }
 
   .page-hero__points {
+    width: 320px;
     top: 450px;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
 
@@ -226,7 +233,7 @@
   }
 }
 @media screen and (min-width: 1200px) {
-  .page {
+  .hero {
     padding-top: 118px;
   }
   .page-hero__title {
