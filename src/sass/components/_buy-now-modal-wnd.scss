@@ -3,17 +3,13 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-
   width: 280px;
   height: 644px;
   padding: 28px;
-
   background-color: #ffffff;
   border-radius: 10px;
-
   border: var(--primary-border);
   overflow: auto;
-
   transition: transform var(--animation), opacity var(--animation);
 
   @media screen and (min-width: 768px) {
@@ -27,16 +23,12 @@
   position: absolute;
   top: 8px;
   right: 8px;
-
   padding: 0;
   width: 16px;
   height: 16px;
-
   background-color: var(--primary-color);
   border: none;
-
   color: var(--secondary-color);
-
   display: flex;
   align-items: center;
   justify-content: center;
@@ -44,7 +36,6 @@
   @media screen and (min-width: 768px) {
     top: 20px;
     right: 20px;
-
     width: 20px;
     height: 20px;
   }
@@ -57,7 +48,6 @@
   font-size: 16px;
   line-height: 1.5;
   text-align: center;
-
   color: var(--secondary-color);
 
   @media screen and (min-width: 768px) {
@@ -94,7 +84,6 @@
   position: absolute;
   display: block;
   top: -65px;
-
   border-radius: 50%;
 }
 
@@ -119,13 +108,10 @@
   line-height: 1.25;
   width: 132px;
   height: 136px;
-  letter-spacing: 0.04em;
   text-transform: uppercase;
   text-align: center;
-
   color: var(--secondary-color);
   border-radius: 10px;
-
   display: flex;
   justify-content: center;
   align-items: flex-end;
@@ -223,17 +209,13 @@
   letter-spacing: 0.01em;
   padding: 5px 12px;
   margin-bottom: 20px;
-
   background-color: var(--modal-form-bgc);
   color: var(--secondary-color);
-
   font-size: 12px;
   line-height: 1.41;
-
   border: var(--modal-form-border);
   border-radius: 10px;
   outline: 1px solid transparent;
-
   transition: border var(--animation);
 
   &::placeholder {
