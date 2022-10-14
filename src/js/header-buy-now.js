@@ -1,9 +1,9 @@
 (() => {
   const refs = {
-    openModalBtn: document.querySelector('[buy-now-modal-open]'),
-    openModalBtnMobile: document.querySelector('[buy-now-modal-open-mobile]'),
-    closeModalBtn: document.querySelector('[buy-now-modal-close]'),
-    modal: document.querySelector('[buy-now-modal]'),
+    openModalBtn: document.getElementById('buy-now-modal-open'),
+    openModalBtnMobile: document.getElementById('buy-now-modal-open-mobile'),
+    closeModalBtn: document.getElementById('buy-now-modal-close'),
+    modal: document.getElementById('buy-now-modal'),
   };
 
   const body = document.getElementById('body');

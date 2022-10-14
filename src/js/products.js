@@ -1,11 +1,11 @@
 (() => {
   const refs = {
     openModalBtn: document.querySelector('[products-modal-open]'),
-    openModalBtn2: document.querySelector('[products-modal-open-2]'),
-    openModalBtn3: document.querySelector('[products-modal-open-3]'),
-    openModalBtn4: document.querySelector('[products-modal-open-4]'),
-    closeModalBtn: document.querySelector('[products-modal-close]'),
-    modal: document.querySelector('[products-modal]'),
+    openModalBtn2: document.getElementById('products-modal-open-2'),
+    openModalBtn3: document.getElementById('products-modal-open-3'),
+    openModalBtn4: document.getElementById('products-modal-open-4'),
+    closeModalBtn: document.getElementById('products-modal-close'),
+    modal: document.getElementById('products-modal'),
   };
 
   const body = document.getElementById('body');
