@@ -1,6 +1,6 @@
 (() => {
   const refs = {
-    openModalBtn: document.querySelector('[products-modal-open]'),
+    openModalBtn: document.getElementById('products-modal-open'),
     openModalBtn2: document.getElementById('products-modal-open-2'),
     openModalBtn3: document.getElementById('products-modal-open-3'),
     openModalBtn4: document.getElementById('products-modal-open-4'),
