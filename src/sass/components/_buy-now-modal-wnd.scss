@@ -85,6 +85,7 @@
   display: block;
   top: -65px;
   border-radius: 50%;
+  cursor: pointer;
 }
 
 .modal-buy__img_kelsey {
@@ -116,6 +117,7 @@
   justify-content: center;
   align-items: flex-end;
   padding-bottom: 20px;
+  cursor: pointer;
   transition: background-color var(--animation);
 }
 
