@@ -1,0 +1,153 @@
+<div class="backdrop is-hidden" buy-now-modal>
+  <div class="modal-buy">
+    <button
+      type="button"
+      class="close-btn"
+      buy-now-modal-close
+      aria-label="button close order window"
+    >
+      <svg class="close-icon" width="16" height="16" aria-label="close icon">
+        <use href="./images/sprite.svg#icon-close"></use>
+      </svg>
+    </button>
+    <h3 class="modal-buy__title">Buy now</h3>
+    <form name="order-window" action="#" class="modal-buy__form">
+      <ul class="modal-buy__list">
+        <li class="modal-buy__item">
+          <label>
+            <span class="modal-buy__block">
+              <picture>
+                <source
+                  srcset="
+                    ./images/buy-now-modal/kelsey-mob.webp    1x,
+                    ./images/buy-now-modal/kelsey-mob@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/buy-now-modal/kelsey-mob.jpg 1x,
+                    ./images/buy-now-modal/kelsey-mob.jpg 2x
+                  "
+                />
+                <img
+                  class="modal-buy__img modal-buy__img_kelsey"
+                  src="./images/buy-now-modal/kelsey-mob.jpg"
+                  alt="The image of a kelsey"
+                />
+              </picture>
+            </span>
+            <input
+              class="modal-buy__agree visually-hidden"
+              type="checkbox"
+              name="kelsey"
+              value="kelsey"
+            />
+            <span class="modal-buy__text modal-buy__text_bc-green modal-buy__text_kelsey"
+              >ice cream</span
+            >
+          </label>
+        </li>
+        <li>
+          <label>
+            <span class="modal-buy__block">
+              <picture>
+                <source
+                  srcset="
+                    ./images/buy-now-modal/pariwat-mob.webp    1x,
+                    ./images/buy-now-modal/pariwat-mob@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/buy-now-modal/pariwat-mob.jpg 1x,
+                    ./images/buy-now-modal/pariwat-mob.jpg 2x
+                  "
+                />
+                <img
+                  class="modal-buy__img modal-buy__img_pariwat"
+                  src="./images/buy-now-modal/pariwat-mob.jpg"
+                  alt="The image of a pariwat"
+                />
+              </picture>
+            </span>
+            <input
+              class="modal-buy__agree visually-hidden"
+              type="checkbox"
+              checked
+              name="ice coffee"
+              value="ice coffee"
+            />
+            <span class="modal-buy__text modal-buy__text_bc-yellow modal-buy__text_pariwat">
+              ice coffee
+            </span>
+          </label>
+        </li>
+        <li>
+          <label>
+            <span class="modal-buy__block">
+              <picture>
+                <source
+                  srcset="
+                    ./images/buy-now-modal/victor-mob.webp    1x,
+                    ./images/buy-now-modal/victor-mob@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/buy-now-modal/victor-mob.jpg 1x,
+                    ./images/buy-now-modal/victor-mob.jpg 2x
+                  "
+                />
+                <img
+                  class="modal-buy__img modal-buy__img_victor"
+                  src="./images/buy-now-modal/victor-mob.jpg"
+                  alt="The image of a victor"
+                />
+              </picture>
+            </span>
+            <input
+              class="modal-buy__agree visually-hidden"
+              type="checkbox"
+              name="milkshake"
+              value="milkshake"
+            />
+            <span class="modal-buy__text modal-buy__text_bc-brown modal-buy__text_victor"
+              >milkshake</span
+            >
+          </label>
+        </li>
+      </ul>
+
+      <label class="modal-buy__label">
+        <input
+          class="modal-buy__input"
+          type="text"
+          name="user-name"
+          required
+          placeholder="Name"
+          pattern="[A-Za-z0-9_]{1,15}"
+        />
+      </label>
+
+      <label class="modal-buy__label">
+        <input
+          class="modal-buy__input"
+          type="tel"
+          name="user-tel"
+          required
+          placeholder="Phone"
+          pattern="[0-9]{3}[0-9]{3}[0-9]{3}"
+        />
+      </label>
+
+      <label class="modal-buy__label modal-buy__label-textarea">
+        <textarea class="modal-buy__coments" name="user-coments" placeholder="Comment"></textarea>
+      </label>
+
+      <button class="buy-now-modal-btn" type="submit" aria-label="submit button">Submit</button>
+    </form>
+  </div>
+</div>

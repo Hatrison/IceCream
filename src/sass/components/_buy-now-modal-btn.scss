@@ -11,7 +11,8 @@
   line-height: 1.21;
   color: var(--modal-btn-font-color);
   transition: background-color var(--animation), color var(--animation);
-
+  margin-left: auto;
+  margin-right: auto;
   &:hover {
     background-color: var(--accent-secondary-color);
   }
