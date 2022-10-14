@@ -1,28 +1,24 @@
 .modal-buy {
   position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 888;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 
-  width: 100%;
-  height: 100%;
+  width: 280px;
+  height: 644px;
   padding: 28px;
 
   background-color: #ffffff;
   border-radius: 10px;
 
   border: var(--primary-border);
-  overflow-y: scroll;
+  overflow: auto;
 
   transition: transform var(--animation), opacity var(--animation);
 
-  @media screen and (min-width: 480px) {
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
-    max-width: 568px;
-    max-height: 644px;
+  @media screen and (min-width: 768px) {
+    width: 568px;
+    height: 644px;
     padding: 32px 54px;
   }
 }
@@ -81,12 +77,9 @@
   row-gap: 20px;
 
   margin-bottom: 24px;
-  @media screen and (min-width: 480px) {
-    flex-direction: row;
-    column-gap: 3.5vw;
-  }
 
   @media screen and (min-width: 768px) {
+    flex-direction: row;
     column-gap: 32px;
     margin-top: 35px;
     margin-bottom: 40px;
@@ -142,6 +135,7 @@
   justify-content: center;
   align-items: flex-end;
   padding-bottom: 20px;
+  transition: background-color var(--animation);
 }
 
 .modal-buy__agree:not(:checked) + .modal-buy__text {
