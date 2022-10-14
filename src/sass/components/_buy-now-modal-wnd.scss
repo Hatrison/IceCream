@@ -12,6 +12,7 @@
   border-radius: 10px;
 
   border: var(--primary-border);
+  overflow-y: scroll;
 
   transition: transform var(--animation), opacity var(--animation);
 
@@ -74,9 +75,18 @@
 }
 
 .modal-buy__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 20px;
+
   margin-bottom: 24px;
+  @media screen and (min-width: 480px) {
+    flex-direction: row;
+    column-gap: 3.5vw;
+  }
+
   @media screen and (min-width: 768px) {
-    display: flex;
     column-gap: 32px;
     margin-top: 35px;
     margin-bottom: 40px;
@@ -86,10 +96,6 @@
 .modal-buy__block {
   position: relative;
   display: block;
-  // width: 130px;
-  // height: 136px;
-  // margin-left: auto;
-  // margin-right: auto;
   margin-top: 86px;
   @media screen and (min-width: 768px) {
     margin-top: 63px;
@@ -132,43 +138,48 @@
   color: var(--secondary-color);
   border-radius: 10px;
 
-  background-color: var(--primary-color);
   display: flex;
   justify-content: center;
   align-items: flex-end;
   padding-bottom: 20px;
 }
 
-.modal-buy__agree:checked + .modal-buy__text {
-  background-color: #96af8c;
-}
-
 .modal-buy__agree:not(:checked) + .modal-buy__text {
   background-color: var(--primary-color);
 }
 
+.modal-buy__agree:checked + .modal-buy__text_bc-green {
+  background-color: var(--ice-cream-card-bgc);
+}
+
+.modal-buy__agree:checked + .modal-buy__text_bc-yellow {
+  background-color: var(--ice-cofee-card-bgc);
+}
+
+.modal-buy__agree:checked + .modal-buy__text_bc-brown {
+  background-color: var(--milkshakes-card-bgc);
+}
+
 .modal-buy__text_kelsey {
-  border-left: 2px solid #96af8c;
-  border-right: 2px solid #96af8c;
-  border-bottom: 2px solid #96af8c;
+  border-left: 2px solid var(--ice-cream-card-bgc);
+  border-right: 2px solid var(--ice-cream-card-bgc);
+  border-bottom: 2px solid var(--ice-cream-card-bgc);
 }
 
 .modal-buy__text_pariwat {
-  border-left: 2px solid #efd478;
-  border-right: 2px solid #efd478;
-  border-bottom: 2px solid #efd478;
-  // background: #efd478;
+  border-left: 2px solid var(--ice-cofee-card-bgc);
+  border-right: 2px solid var(--ice-cofee-card-bgc);
+  border-bottom: 2px solid var(--ice-cofee-card-bgc);
 }
 .modal-buy__text_victor {
-  border-left: 2px solid #d6936d;
-  border-right: 2px solid #d6936d;
-  border-bottom: 2px solid #d6936d;
+  border-left: 2px solid var(--milkshakes-card-bgc);
+  border-right: 2px solid var(--milkshakes-card-bgc);
+  border-bottom: 2px solid var(--milkshakes-card-bgc);
 }
 
 .modal-buy__label {
   display: flex;
   flex-direction: column;
-  background: rgba(248, 210, 78, 0.1);
 }
 
 .modal-buy__input {
@@ -178,13 +189,13 @@
   height: 32px;
   border: var(--modal-form-border);
   margin-bottom: 12px;
-  background-color: rgba(248, 210, 78, 0.1);
+  background-color: var(--modal-form-bgc);
   color: var(--secondary-color);
   font-size: 12px;
   line-height: 1.41;
   padding: 12px 12px;
   outline: none;
-  transition: border-color 250ms linear;
+  transition: border-color var(--animation);
 
   &:not(:placeholder-shown):required:invalid {
     border-color: rgb(255, 0, 0);
@@ -224,7 +235,7 @@
   padding: 5px 12px;
   margin-bottom: 20px;
 
-  background-color: rgba(248, 210, 78, 0.1);
+  background-color: var(--modal-form-bgc);
   color: var(--secondary-color);
 
   font-size: 12px;
@@ -234,7 +245,7 @@
   border-radius: 10px;
   outline: 1px solid transparent;
 
-  transition: border 250ms linear;
+  transition: border var(--animation);
 
   &::placeholder {
     font-size: 12px;

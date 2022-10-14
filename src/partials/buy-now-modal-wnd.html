@@ -25,15 +25,13 @@
               </picture>
 
             </span>
-            <input class="modal-buy__agree visually-hidden" checked type="checkbox" name="kelsey" value="kelsey" />
-            <p class="modal-buy__text modal-buy__text_kelsey">ice cream</p>
+            <input class="modal-buy__agree visually-hidden" type="checkbox" name="kelsey" value="kelsey" />
+            <p class="modal-buy__text modal-buy__text_bc-green modal-buy__text_kelsey">ice cream</p>
           </label>
         </li>
         <li>
-          <label class="modal-">
-            <input class="modal-buy__agree visually-hidden" type="checkbox" checked name="ice coffee"
-              value="ice coffee" />
-            <div class="modal-buy__block">
+          <label>
+            <span class="modal-buy__block">
               <picture>
                 <source srcset="
                         ./images/buy-now-modal/pariwat-mob.webp    1x,
@@ -47,15 +45,15 @@
                   alt="The image of a pariwat" />
               </picture>
 
-              <p class="modal-buy__text modal-buy__text_pariwat">ice coffee</p>
-            </div>
+            </span>
+            <input class="modal-buy__agree visually-hidden" type="checkbox" checked name="ice coffee"
+              value="ice coffee" />
+            <p class="modal-buy__text modal-buy__text_bc-yellow modal-buy__text_pariwat">ice coffee</p>
           </label>
         </li>
         <li>
           <label>
-            <input class="modal-buy__agree visually-hidden" type="checkbox" checked name="milkshake"
-              value="milkshake" />
-            <div class="modal-buy__block">
+            <span class="modal-buy__block">
               <picture>
                 <source srcset="
                         ./images/buy-now-modal/victor-mob.webp    1x,
@@ -69,8 +67,9 @@
                   alt="The image of a victor" />
               </picture>
 
-              <p class="modal-buy__text modal-buy__text_victor">milkshake</p>
-            </div>
+            </span>
+            <input class="modal-buy__agree visually-hidden" type="checkbox" name="milkshake" value="milkshake" />
+            <p class="modal-buy__text modal-buy__text_bc-brown modal-buy__text_victor">milkshake</p>
           </label>
         </li>
       </ul>
@@ -89,7 +88,7 @@
         <textarea class="modal-buy__coments" name="user-coments" placeholder="Comment"></textarea>
       </label>
 
-      <button class="buy-now-modal-btn" type="submit">Submit</button>
+      <button class="buy-now-modal-btn" type="submit" aria-label="submit button">Submit</button>
     </form>
   </div>
 </div>
